@@ -37,7 +37,7 @@ const About = () => {
       exit="exit"
     >
       <div className="description">
-        I describe myself as someone who's persistant, a quick learner and loves
+        I describe myself as someone who is persistant, a quick learner and loves
         problem solving by using simple and scalable solutions.
       </div>
       <div className="data_section">
@@ -50,9 +50,9 @@ const About = () => {
                 title="Frontend Development"
                 body={[
                   "I can built a beautiful webapplications using ",
-                  <strong>HTML,CSS</strong>,
-                  " and ",
-                  <strong>React.js</strong>,
+                  <strong>HTML, CSS</strong>,
+                  " and",
+                  <strong> React.js</strong>.
                 ]}
               />
             </div>
@@ -62,9 +62,9 @@ const About = () => {
                 title="Backend  Development"
                 body={[
                   "handle database, server, api using ",
-                  <strong> nodejs , express </strong>,
-                  " and ",
-                  <strong> Mongodb </strong>,
+                  <strong> Nodejs, Express</strong>,
+                  " and",
+                  <strong> Mongodb</strong>,
                 ]}
               />
             </div>
@@ -73,8 +73,8 @@ const About = () => {
                 icon={api}
                 title="API Development"
                 body={[
-                  "develop robust REST API using ",
-                  <strong> express framework </strong>,
+                  "develop robust REST API using",
+                  <strong> Express framework</strong>.
                 ]}
               />
             </div>
@@ -85,7 +85,7 @@ const About = () => {
                 title="Database"
                 body={[
                   "I can handle the integration of database with frontend using ",
-                  <strong>MongoDB</strong>,
+                  <strong>MongoDB</strong>.
                 ]}
               />
             </div>
