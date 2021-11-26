@@ -28,12 +28,12 @@ var skill_tool_store = [
   {
     name: "git",
     level: "avg",
-    logo: "",
+    
   },
   {
     name: "VsCode",
     level: "verygood",
-    logo: "",
+   
   },
 ];
 
