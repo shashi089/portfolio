@@ -28,7 +28,7 @@ var projects_store = [
     image: restaurant,
     url: "https://vigorous-mestorf-be888b.netlify.app/",
     github: "https://github.com/shashi089/react-restaurant-website",
-    catagory: ["html", "css"],
+    catagory: ["react.js"],
   },
   {
     name: "React CRUD-UI",
