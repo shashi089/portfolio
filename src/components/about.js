@@ -37,8 +37,8 @@ const About = () => {
       exit="exit"
     >
       <div className="description">
-        I describe myself as someone who is persistant, a quick learner and loves
-        problem solving by using simple and scalable solutions.
+        I describe myself as someone who is persistant, a quick learner and
+        loves problem solving by using simple and scalable solutions.
       </div>
       <div className="data_section">
         <div className="container">
@@ -52,7 +52,7 @@ const About = () => {
                   "I can built a beautiful webapplications using ",
                   <strong>HTML, CSS</strong>,
                   " and",
-                  <strong> React.js</strong>.
+                  <strong> React.js</strong>,
                 ]}
               />
             </div>
@@ -74,7 +74,7 @@ const About = () => {
                 title="API Development"
                 body={[
                   "develop robust REST API using",
-                  <strong> Express framework</strong>.
+                  <strong> Express framework</strong>,
                 ]}
               />
             </div>
@@ -85,7 +85,7 @@ const About = () => {
                 title="Database"
                 body={[
                   "I can handle the integration of database with frontend using ",
-                  <strong>MongoDB</strong>.
+                  <strong>MongoDB</strong>,
                 ]}
               />
             </div>
