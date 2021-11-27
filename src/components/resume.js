@@ -114,8 +114,8 @@ const Resume = () => {
           <div className="row">
             <div className="resume_card_body">
               <div className="resume_card_title">
-                <h6>Vindhya Info-media pvt ltd - Bangalore</h6>
-                <span>Technical Support Engineer (L2)</span>
+                <h6>Vindhya E-Infomedia pvt ltd - Bangalore</h6>
+                <span>Technical Support Engineer (L2-ATL)</span>
               </div>
               <p className="resume_card_description">
                 <span>
