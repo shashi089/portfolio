@@ -36,7 +36,10 @@ const SideBar = () => {
         <span>Shashidhar</span> Naik
       </h3>
       <div className="title bg-gray side_item">Full stack web developer</div>
-      <a href={resume} download="resume.pdf">
+      <a
+        href="https://drive.google.com/file/d/1CUJiVb6ONtm0buwV-CHSnBao4XMCBirg/view?usp=sharing"
+        target="_blank"
+      >
         <div className="cv side_item">
           <img src={tie} alt="resume" className="icon_small" /> Download resume
         </div>
