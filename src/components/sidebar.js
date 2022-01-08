@@ -5,7 +5,7 @@ import tie from "../images/tie.svg";
 import max from "../images/profile.jpg";
 import location from "../icons/location.png";
 import github from "../icons/github.svg";
-import resume from "../resume/resume.pdf";
+// import resume from "../resume/resume.pdf";
 import gmail from "../icons/gmail.png";
 import call from "../icons/call.png";
 import linkedin from "../icons/linkedin.svg";
@@ -39,6 +39,7 @@ const SideBar = () => {
       <a
         href="https://drive.google.com/file/d/1CUJiVb6ONtm0buwV-CHSnBao4XMCBirg/view?usp=sharing"
         target="_blank"
+        rel="noreferrer"
       >
         <div className="cv side_item">
           <img src={tie} alt="resume" className="icon_small" /> Download resume

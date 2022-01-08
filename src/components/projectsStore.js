@@ -1,12 +1,10 @@
 import weather from "../projectsImages/weather.png";
-import myanimelist from "../projectsImages/myanimelist.png";
-import restaurant from "../projectsImages/restaurant.png";
-import breakingbad from "../projectsImages/breakingbad.png";
 import reactcrud from "../projectsImages/reactcrud.png";
 import webscrap from "../projectsImages/webscraping.png";
 import passwordreset from "../projectsImages/password-reset.png";
-import mernblog from "../projectsImages/mernblog.png";
 import jobportal from "../projectsImages/jobportal.png";
+import referlink from "../projectsImages/referlink.png";
+import contactManager from "../projectsImages/contacManager.png";
 
 var projects_store = [
   {
@@ -14,41 +12,35 @@ var projects_store = [
     image: weather,
     url: "https://shashidhar-weather-api.netlify.app",
     github: "https://github.com/shashi089/weather-api",
-    catagory: ["html", "css", "bootstrap"],
-  },
-  {
-    name: "My Anime List",
-    image: myanimelist,
-    url: "https://shashidhar-myanimelist.netlify.app/",
-    github: "https://github.com/shashi089/anime-api",
     catagory: ["html", "css"],
   },
   {
-    name: "Restaurant Website",
-    image: restaurant,
-    url: "https://vigorous-mestorf-be888b.netlify.app/",
-    github: "https://github.com/shashi089/react-restaurant-website",
-    catagory: ["react.js"],
-  },
-  {
-    name: "React CRUD-UI",
+    name: "React User Management",
     image: reactcrud,
     url: "https://shashidhar-react-crud-ui.netlify.app",
     github: "https://github.com/shashi089/react-crud-ui",
     catagory: ["react.js"],
   },
-  {
-    name: "Mern Blog",
-    image: mernblog,
-    url: "https://zealous-noether-bf76cb.netlify.app",
-    github: "https://github.com/shashi089/mern-blog-frontend",
-    catagory: ["fullstack"],
-  },
+
   {
     name: "Job Portal",
     image: jobportal,
     url: "https://shashidhar-mern-job-portal.netlify.app/",
     github: "https://github.com/shashi089/job-portal-frontend",
+    catagory: ["fullstack"],
+  },
+  {
+    name: "Contact Manager",
+    image: contactManager,
+    url: "https://mern-contact-manager.netlify.app",
+    github: "hhttps://github.com/shashi089/mern-contact-manager-frontend",
+    catagory: ["fullstack"],
+  },
+  {
+    name: "Referral link",
+    image: referlink,
+    url: "https://referlink-mern.netlify.app/",
+    github: "https://github.com/shashi089/referrallink-frontend",
     catagory: ["fullstack"],
   },
   {
@@ -64,13 +56,6 @@ var projects_store = [
     url: "https://shashidhar-password-reset.netlify.app/",
     github: "https://github.com/shashi089/password-reset-frontend",
     catagory: ["fullstack"],
-  },
-  {
-    name: "Breaking Bad Info",
-    image: breakingbad,
-    url: "https://shashidhar-breaking-bad-api.netlify.app",
-    github: "https://github.com/shashi089/breaking-bad-api",
-    catagory: ["html", "css"],
   },
 ];
 export default projects_store;

@@ -54,12 +54,6 @@ const Projects = () => {
         </div>
         <div
           className="project_header_child"
-          onClick={() => handleFilterCatagory("bootstrap")}
-        >
-          Bootstrap
-        </div>
-        <div
-          className="project_header_child"
           onClick={() => handleFilterCatagory("react.js")}
         >
           React js
