@@ -138,7 +138,7 @@ const Resume = () => {
 
               <p className="resume_card_description">
                 <span>
-                  <b>Duration</b> - Nov 2017 - Dec 2018
+                  <b>Duration</b> - Oct 2017 - Dec 2018
                 </span>
                 <br />
                 Responsibilities:Supported customers with basic technical
