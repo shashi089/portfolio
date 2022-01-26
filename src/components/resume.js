@@ -97,7 +97,7 @@ const Resume = () => {
             <div className="resume_card_body">
               <div className="resume_card_title">
                 <h6>Triofi Technologies Pvt. Ltd. - Bangalore</h6>
-                <span>Web Developer Intern -Internship</span>
+                <span>Web Development Intern -Internship</span>
               </div>
               <p className="resume_card_description">
                 <span>
