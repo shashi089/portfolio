@@ -96,6 +96,42 @@ const Resume = () => {
             <div className="sub_heading">Experience</div>
             <div className="resume_card_body">
               <div className="resume_card_title">
+                <h6>Triofi Technologies Pvt. Ltd. - Bangalore</h6>
+                <span>Web Developer Intern -Internship</span>
+              </div>
+              <p className="resume_card_description">
+                <span>
+                  <b>Duration</b> - Dec 2021 - Present
+                </span>
+                <br />
+                Responsibilities:Developing new user-facing features using
+                React.js. Building reusable components and front-end libraries
+                for future use. Creating designs and screens in Figma.Innovating
+                and suggesting new design ideas.
+              </p>
+            </div>
+          </div>
+          <div className="row">
+            <div className="resume_card_body">
+              <div className="resume_card_title">
+                <h6>Vindhya E-Infomedia Pvt. Ltd. - Bangalore</h6>
+                <span>Assistant Team Lead</span>
+              </div>
+              <p className="resume_card_description">
+                <span>
+                  <b>Duration</b> - Jan 2019 - Dec 2020
+                </span>
+                <br />
+                Responsibilities:Coordinated with Level 1 technical support
+                engineers to take over calls outside their level of
+                support.Onboarded and trained all incoming junior tech support
+                engineers.
+              </p>
+            </div>
+          </div>
+          <div className="row">
+            <div className="resume_card_body">
+              <div className="resume_card_title">
                 <h6>Microsys - Pune</h6>
                 <span>Technical Support Engineer (L1) </span>
               </div>
@@ -108,24 +144,6 @@ const Resume = () => {
                 Responsibilities:Supported customers with basic technical
                 support for networking products like router, adapters. as well
                 as Software application(Desktop app)
-              </p>
-            </div>
-          </div>
-          <div className="row">
-            <div className="resume_card_body">
-              <div className="resume_card_title">
-                <h6>Vindhya E-Infomedia pvt ltd - Bangalore</h6>
-                <span>Technical Support Engineer (L2-ATL)</span>
-              </div>
-              <p className="resume_card_description">
-                <span>
-                  <b>Duration</b> - Jan 2019 - Dec 2020
-                </span>
-                <br />
-                Responsibilities:Coordinated with Level 1 technical support
-                engineers to take over calls outside their level of
-                support.Onboarded and trained all incoming junior tech support
-                engineers.
               </p>
             </div>
           </div>

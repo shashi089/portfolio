@@ -15,7 +15,7 @@ var projects_store = [
     catagory: ["html", "css"],
   },
   {
-    name: "React User Management",
+    name: "User Management",
     image: reactcrud,
     url: "https://shashidhar-react-crud-ui.netlify.app",
     github: "https://github.com/shashi089/react-crud-ui",

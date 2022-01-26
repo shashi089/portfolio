@@ -35,11 +35,16 @@ const ProjectCard = ({ image, name, url, github }) => {
           <a href={url} target="_blank" rel="noreferrer">
             <img src={image} alt="project_image" className="project_image" />
           </a>
-          <a href={github} target="_blank" rel="noreferrer">
-            <div className="project_name mt-2">
-              <img src={githubs} alt="" />-{name}
-            </div>
-          </a>
+          <div className="d-flex justify-content-center">
+            <a href={url} target="_blank" rel="noreferrer">
+              <button className="btn btn-success mt-1">Demo</button>
+            </a>
+            <a href={github} target="_blank" rel="noreferrer">
+              <div className="project_name mt-1 ">
+                <img src={githubs} alt="" />-{name}
+              </div>
+            </a>
+          </div>
         </figure>
       </motion.div>
     </AnimatePresence>

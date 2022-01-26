@@ -35,7 +35,7 @@ const SideBar = () => {
       <h3 className="name">
         <span>Shashidhar</span> Naik
       </h3>
-      <div className="title bg-gray side_item">Full stack web developer</div>
+      <div className="title bg-gray side_item">Web Developer</div>
       <a
         href="https://drive.google.com/file/d/1CUJiVb6ONtm0buwV-CHSnBao4XMCBirg/view?usp=sharing"
         target="_blank"

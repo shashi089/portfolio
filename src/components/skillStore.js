@@ -5,7 +5,7 @@ var skill_language_store = [
   },
   {
     name: "React",
-    level: "avg",
+    level: "verygood",
   },
   {
     name: "Node js",
@@ -28,12 +28,14 @@ var skill_tool_store = [
   {
     name: "git",
     level: "avg",
-    
   },
   {
     name: "VsCode",
     level: "verygood",
-   
+  },
+  {
+    name: "Figma",
+    level: "avg",
   },
 ];
 

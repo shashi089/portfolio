@@ -322,6 +322,12 @@ a:hover {
 .project_name {
   font-size: 17px;
 }
+.project_wrapper .btn {
+  height: 30px;
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 900;
+}
 
 @media screen and (max-width: 991px) {
   .mainarea_custom {
