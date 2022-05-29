@@ -107,7 +107,7 @@ const Resume = () => {
                 Responsibilities:Developing new user-facing features using
                 React.js. Building reusable components and front-end libraries
                 for future use. Creating designs and screens in Figma.Innovating
-                and suggesting new design ideas.
+                and suggesting new design ideas. API Integration.
               </p>
             </div>
           </div>
