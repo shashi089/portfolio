@@ -50,9 +50,9 @@ const About = () => {
                 title="Frontend Development"
                 body={[
                   "I can built a beautiful webapplications using ",
-                  <strong>HTML, CSS</strong>,
+                  <strong>HTML, CSS, React js</strong>,
                   " and",
-                  <strong> React.js</strong>,
+                  <strong> Nuxt js</strong>,
                 ]}
               />
             </div>

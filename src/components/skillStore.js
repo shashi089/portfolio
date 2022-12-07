@@ -1,10 +1,30 @@
 var skill_language_store = [
   {
+    name: "HTML & CSS",
+    level: "exp",
+  },
+  {
+    name: "bootstrap",
+    level: "exp",
+  },
+  {
     name: "Java Script",
     level: "verygood",
   },
   {
-    name: "React",
+    name: "React JS",
+    level: "verygood",
+  },
+  {
+    name: "Nuxt Js",
+    level: "verygood",
+  },
+  {
+    name: "Type Script",
+    level: "verygood",
+  },
+  {
+    name: "bootstrap",
     level: "verygood",
   },
   {
@@ -14,14 +34,6 @@ var skill_language_store = [
   {
     name: "Mongodb",
     level: "avg",
-  },
-  {
-    name: "HTML & CSS",
-    level: "verygood",
-  },
-  {
-    name: "bootstrap",
-    level: "verygood",
   },
 ];
 var skill_tool_store = [

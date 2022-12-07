@@ -104,10 +104,10 @@ const Resume = () => {
                   <b>Duration</b> - Dec 2021 - Present
                 </span>
                 <br />
-                Responsibilities:Developing new user-facing features using
-                React.js. Building reusable components and front-end libraries
-                for future use. Creating designs and screens in Figma.Innovating
-                and suggesting new design ideas. API Integration.
+                Responsibilities:Understand client requirements and functional
+                specifications. Write well-designed, testable, efficient code .
+                Solving complex technical issues. Provide technical assistance
+                to juniors within the team
               </p>
             </div>
           </div>
