@@ -37,7 +37,7 @@ const About = () => {
       exit="exit"
     >
       <div className="description">
-        I describe myself as someone who is persistant, a quick learner and
+        I describe myself as someone who is persistent, a quick learner and
         loves problem solving by using simple and scalable solutions.
       </div>
       <div className="data_section">
