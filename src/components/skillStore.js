@@ -24,10 +24,6 @@ var skill_language_store = [
     level: "verygood",
   },
   {
-    name: "bootstrap",
-    level: "verygood",
-  },
-  {
     name: "Node js",
     level: "avg",
   },
