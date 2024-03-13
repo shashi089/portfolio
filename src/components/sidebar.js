@@ -37,7 +37,7 @@ const SideBar = () => {
       </h3>
       <div className="title bg-gray side_item">Software Developer</div>
       <a
-        href="https://drive.google.com/file/d/1CUJiVb6ONtm0buwV-CHSnBao4XMCBirg/view?usp=sharing"
+        href="https://drive.google.com/file/d/1jhKpvvAh6JvrPoWskidz9VAt6Tz8n4Tf/view?usp=sharing"
         target="_blank"
         rel="noreferrer"
       >
