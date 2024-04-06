@@ -4,7 +4,7 @@ import Navbar from "./components/navbar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import About from "./components/about";
 import Resume from "./components/resume";
-import Projects from "./components/projects";
+// import Projects from "./components/projects";
 import { AnimatePresence } from "framer-motion";
 
 function App() {
