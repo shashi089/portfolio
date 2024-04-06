@@ -46,7 +46,7 @@ const Navbar = () => {
             </div>
           </Link>
         )}
-        {heading !== "Projects" && (
+        {/* {heading !== "Projects" && (
           <Link to="/projects">
             <div
               className="projects navItem"
@@ -55,7 +55,7 @@ const Navbar = () => {
               Projects
             </div>
           </Link>
-        )}
+        )} */}
         {heading !== "Resume" && (
           <Link to="/resume">
             {" "}

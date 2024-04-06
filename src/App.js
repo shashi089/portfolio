@@ -22,7 +22,7 @@ function App() {
                 <Routes>
                   <Route exact path="/" element={<About />} />
                   <Route path="/resume" element={<Resume />} />
-                  <Route path="/projects" element={<Projects />} />
+                  {/* <Route path="/projects" element={<Projects />} /> */}
                 </Routes>
               </AnimatePresence>
             </div>
