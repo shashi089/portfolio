@@ -104,14 +104,14 @@ const Resume = () => {
                   <b>Duration</b> - JAN 2023 - JAN-2024
                 </span>
                 <br />
-                Responsibilities:Collaborate with project managers to define technical requirements and scope.
-                  Plan and allocate tasks to team members. Develop user interfaces using Nuxt.js and React.js. Develop and maintain RESTful APIs
-                 Provide technical assistance to juniors within the team
+                Responsibilities:Collaborate with project managers to define
+                technical requirements and scope. Develop user interfaces using
+                Nuxt.js and React.js. Develop and maintain RESTful APIs. Provide
+                technical assistance to juniors within the team
               </p>
             </div>
           </div>
           <div className="row">
-            <div className="sub_heading">Experience</div>
             <div className="resume_card_body">
               <div className="resume_card_title">
                 <h6>Triofi Technologies Pvt. Ltd. - Bangalore</h6>
