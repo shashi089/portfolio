@@ -77,12 +77,9 @@ const Resume = () => {
                 <h6>PUC- Science</h6>
                 <div className="resume_card_year">
                   SNJPNMS PU Science college Nidasoshi (2012-2013)
-                  </br>
-                  </br>
                 </div>
-               
-                
-                 
+                 <br />
+                 <br />
                 <h6>SSLC</h6>
                 <div className="resume_card_year">
                   Rani Channamma High School Hukkeri (2011)
