@@ -68,7 +68,6 @@ const Resume = () => {
               <p className="resume_card_description">
                 I have completed B.E in Electronics and communication from
                 BLDEA's College of Engineering and Technology.
-                <p>Percentage : 63.72% </p>
               </p>
             </div>
           </div>
@@ -79,13 +78,13 @@ const Resume = () => {
                 <div className="resume_card_year">
                   SNJPNMS PU Science college Nidasoshi (2012-2013)
                 </div>
-                <p className="resume_card_description">Percentage : 70.83% </p>
+               
 
                 <h6>SSLC</h6>
                 <div className="resume_card_year">
                   Rani Channamma High School Hukkeri (2011)
                 </div>
-                <p className="resume_card_description">Percentage : 86.66% </p>
+              
               </div>
             </div>
           </div>
