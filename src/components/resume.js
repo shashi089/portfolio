@@ -3,7 +3,8 @@ import react from "../images/react.svg";
 
 import { motion } from "framer-motion";
 import { skill_language_store, skill_tool_store } from "./skillStore";
-
+import { experience_store } from "./experienceStore";
+import ExperienceCard from "./experienceCard";
 const SkillWrapper = ({ name, level, icon }) => {
   var className = "skill";
 
@@ -78,13 +79,12 @@ const Resume = () => {
                 <div className="resume_card_year">
                   SNJPNMS PU Science college Nidasoshi (2012-2013)
                 </div>
-                 <br />
-                 <br />
+                <br />
+                <br />
                 <h6>SSLC</h6>
                 <div className="resume_card_year">
                   Rani Channamma High School Hukkeri (2011)
                 </div>
-              
               </div>
             </div>
           </div>
@@ -93,77 +93,17 @@ const Resume = () => {
         <div className="col-12 col-lg-6 resume_card">
           <div className="row">
             <div className="sub_heading">Experience</div>
-            <div className="resume_card_body">
-              <div className="resume_card_title">
-                <h6>Flyers Soft Pvt. Ltd. - Bangalore</h6>
-                <span>Software Developer</span>
-              </div>
-              <p className="resume_card_description">
-                <span>
-                  <b>Duration</b> - JAN 2023 - JAN-2024
-                </span>
-                <br />
-                Responsibilities:Collaborate with project managers to define
-                technical requirements and scope. Develop user interfaces using
-                Nuxt.js and React.js. Develop and maintain RESTful APIs. Provide
-                technical assistance to juniors within the team
-              </p>
-            </div>
           </div>
-          <div className="row">
-            <div className="resume_card_body">
-              <div className="resume_card_title">
-                <h6>Triofi Technologies Pvt. Ltd. - Bangalore</h6>
-                <span>Software Developer</span>
-              </div>
-              <p className="resume_card_description">
-                <span>
-                  <b>Duration</b> - Dec 2021 - Dec-2022
-                </span>
-                <br />
-                Responsibilities:Understand client requirements and functional
-                specifications. Write well-designed, testable, efficient code .
-                Solving complex technical issues. Provide technical assistance
-                to juniors within the team
-              </p>
-            </div>
-          </div>
-          <div className="row">
-            <div className="resume_card_body">
-              <div className="resume_card_title">
-                <h6>Vindhya E-Infomedia Pvt. Ltd. - Bangalore</h6>
-                <span>Assistant Team Lead</span>
-              </div>
-              <p className="resume_card_description">
-                <span>
-                  <b>Duration</b> - Jan 2019 - Dec 2020
-                </span>
-                <br />
-                Responsibilities:Coordinated with Level 1 technical support
-                engineers to take over calls outside their level of
-                support.Onboarded and trained all incoming junior tech support
-                engineers.
-              </p>
-            </div>
-          </div>
-          <div className="row">
-            <div className="resume_card_body">
-              <div className="resume_card_title">
-                <h6>Microsys - Pune</h6>
-                <span>Technical Support Engineer (L1) </span>
-              </div>
 
-              <p className="resume_card_description">
-                <span>
-                  <b>Duration</b> - Oct 2017 - Dec 2018
-                </span>
-                <br />
-                Responsibilities:Supported customers with basic technical
-                support for networking products like router, adapters. as well
-                as Software application(Desktop app)
-              </p>
-            </div>
-          </div>
+          {experience_store.map((exp, i) => (
+            <ExperienceCard
+              key={i}
+              company={exp.company}
+              role={exp.role}
+              duration={exp.duration}
+              responsibilities={exp.responsibilities}
+            />
+          ))}
         </div>
       </div>
       <div className="row">

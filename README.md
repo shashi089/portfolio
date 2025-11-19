@@ -1,70 +1,153 @@
-# Getting Started with Create React App
+# Portfolio Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive portfolio website built with React that showcases personal projects, skills, and professional experience. The application features smooth animations, a clean UI, and a modular component architecture.
 
-## Available Scripts
+## ✨ Features
 
-In the project directory, you can run:
+- **Responsive Design**: Fully responsive layout that works on mobile, tablet, and desktop devices
+- **Smooth Animations**: Powered by Framer Motion for delightful user experience
+- **Modern UI**: Clean and professional design with a customizable layout
+- **Routing**: Supports multiple pages with React Router
+- **Animated Transitions**: Smooth page transitions using AnimatePresence
+- **Modular Components**: Well-structured component architecture for maintainability
 
-### `yarn start`
+## 🛠️ Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Frontend**: React.js 17
+- **Styling**: CSS with custom styling
+- **Routing**: React Router DOM
+- **Animations**: Framer Motion
+- **State Management**: React Hooks
+- **Build Tool**: Create React App
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 📋 Components
 
-### `yarn test`
+The application is built with several reusable components:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Sidebar**: Navigation sidebar component
+- **Navbar**: Animated navigation header with page title management
+- **Card**: Reusable card component for displaying skills and services
+- **About**: Detailed information about skills and expertise
+- **Resume**: Professional resume section
+- **ProjectCard**: Component for showcasing projects (currently commented out)
 
-### `yarn build`
+## 🚀 Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Node.js (version 12 or higher)
+- npm or yarn package manager
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `yarn eject`
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/portfolio.git
+cd portfolio
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Start the development server:
+```bash
+npm start
+# or
+yarn start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+4. Open your browser and visit `http://localhost:3000` to see the application running.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Available Scripts
 
-## Learn More
+- `npm start` - Runs the app in development mode
+- `npm test` - Launches the test runner in interactive watch mode
+- `npm run build` - Builds the app for production to the `build` folder
+- `npm run eject` - Ejects from Create React App (irreversible)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📁 Project Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+portfolio/
+├── public/
+│   ├── index.html
+│   └── _redirects
+├── src/
+│   ├── components/
+│   │   ├── about.js
+│   │   ├── card.js
+│   │   ├── navbar.js
+│   │   ├── sidebar.js
+│   │   └── projectCard.js
+│   ├── icons/
+│   ├── images/
+│   ├── projectsImages/
+│   ├── resume/
+│   ├── App.js
+│   ├── App.css
+│   ├── index.js
+│   └── index.css
+├── package.json
+└── README.md
+```
 
-### Code Splitting
+## 🎨 UI Features
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Animated page transitions** using Framer Motion
+- **Session-based navigation state** to maintain current page title
+- **Responsive grid layout** using Bootstrap classes
+- **Interactive cards** showcasing skills and expertise
+- **Dynamic navigation** that updates based on current page
 
-### Analyzing the Bundle Size
+## 🌐 Skills & Technologies Highlighted
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **Frontend Development**: HTML, CSS, React.js, Nuxt.js
+- **Backend Development**: Node.js, Express.js
+- **Database Integration**: MongoDB
+- **API Development**: REST API development with Express
+- **Problem Solving**: Creating simple and scalable solutions
 
-### Making a Progressive Web App
+## 🔧 Customization
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+To customize this portfolio for your own use:
 
-### Advanced Configuration
+1. Update the content in the `About` component
+2. Modify the `Card` component data with your own skills
+3. Add your own resume content in the `Resume` component
+4. Include your project images in the `projectsImages` folder
+5. Update the `Sidebar` component with your personal information
+6. Replace icons in the `icons` folder with your own
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📄 Routes
 
-### Deployment
+The application currently supports:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- `/` (Home/About) - Displays about section and skills
+- `/resume` - Displays resume section
+- `/projects` - (Currently commented out, available for future implementation)
 
-### `yarn build` fails to minify
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you'd like to contribute to this project:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📜 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 📞 Contact
+
+If you have any questions or suggestions, feel free to reach out!
+
+---
+
+Built with ❤️ using React and Framer Motion.
