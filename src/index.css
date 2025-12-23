@@ -1,1 +1,30 @@
+@import "tailwindcss";
 
+@theme {
+    --color-primary: #8b5cf6;
+    /* violet-500 */
+    --color-secondary: #ec4899;
+    /* pink-500 */
+    --color-dark: #0f172a;
+    /* slate-950 */
+}
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        @apply bg-slate-950 text-slate-100 font-sans antialiased selection:bg-violet-500/30;
+    }
+}
+
+@layer utilities {
+    .glass {
+        @apply backdrop-blur-md bg-slate-900/50 border border-slate-800/50;
+    }
+
+    .text-gradient {
+        @apply bg-clip-text text-transparent bg-gradient-to-r from-violet-400 to-pink-400;
+    }
+}

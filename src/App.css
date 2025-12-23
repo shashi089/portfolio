@@ -1,355 +1,42 @@
-@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Merriweather:wght@300&display=swap");
-
-body {
-  background-image: linear-gradient(to right bottom, #00f260, #0575e6);
-  font-family: sans-serif;
-  height: 100vh;
-  color: #354358;
-}
-
-.projects_section::-webkit-scrollbar {
-  width: 10px;
-}
-
-.projects_section::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(to right bottom, #00f260, #0575e6);
-}
-
-.projects_section::-webkit-scrollbar-track {
-  background: #ffffff;
-}
-
-/* scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(to right bottom, #00f260, #0575e6);
-}
-
-::-webkit-scrollbar-track {
-  background: #ffffff;
-}
-
-.icon_small {
-  width: 25px;
-  height: 25px;
-}
-
-.icon_large {
-  width: 40px;
-  height: 40px;
-}
-
-.icon_tiny {
-  width: 15px;
-  height: 15px;
-}
-
-.social_icons {
-  margin: 25px 0;
-}
-
-.social_icons :first-child {
-  margin-right: 10px;
-}
-
-.social_icon {
-  cursor: pointer;
-}
-
-.social_icon:hover {
-  transform: scale(1.1);
-  transition: linear;
-  transition-duration: 0.3s;
-}
-
-.custom_container {
-  padding-top: 50px;
-}
-
-.custom_row {
-  height: 90vh;
-}
-
-/* sidebar */
-.sideBar_custom {
-  background-color: #fff;
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
   text-align: center;
-  border-radius: 20px;
-  height: 100%;
-  padding: 25px 15px;
-  box-shadow: 0 0 10px black;
 }
 
-.name {
-  margin: 20px 0;
-  font-family: "Kaushan Script", cursive;
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-.name span {
-  color: #00f260;
-}
-
-.bg-gray {
-  background-color: #f1f2f3;
-}
-
-.side_item {
-  border-radius: 35px;
-  height: 40px;
-  font-size: 18px;
-  padding-top: 6px;
-  margin-bottom: 8px;
-}
-
-.contact {
-  background-color: #dbdddf;
-  padding: 2px 0;
-  margin: 0 -15px;
-}
-
-.contact .side_item {
-  margin-bottom: 1px;
-  font-size: 15px;
-}
-
-.cv:hover,
-.github:hover {
-  cursor: pointer;
-  background-color: #f1f2f3;
-  color: #000;
-}
-
-.email {
-  background-image: linear-gradient(to right bottom, #00f260, #0575e6);
-  border-radius: 30px;
-  color: #fff;
-  margin: 15px 25px 0;
-  cursor: pointer;
-}
-
-.email:hover {
-  background-image: linear-gradient(to right bottom, #0575e6, #00f260);
-  transition: 1s linear;
-}
-
-.nav_heading {
-  font-size: 32px;
-  font-weight: 700;
-  color: #354358;
-  border-bottom: 4px solid #00f260;
-}
-
-.mainarea_custom {
-  background-color: #fff;
-  border-radius: 20px;
-  padding-top: 20px;
-  box-shadow: 0 0 10px black;
-}
-
-.content_section {
-  padding: 20px 0;
-}
-
-.description {
-  margin-bottom: 20px;
-  padding: 20px;
-}
-
-.data_section {
-  background-color: #dbdddf;
-  padding-top: 20px;
-  margin: 0 -15px;
-}
-
-.sub_heading {
-  font-size: 22px;
-  font-weight: 700;
-  color: #354358;
-}
-
-.card_section {
-  display: flex;
-}
-
-.card_custom {
-  background-color: #fff;
-  margin: 10px;
-  display: flex;
-  flex-direction: row;
-  padding: 10px;
-  border-radius: 10px;
-}
-
-.card_body {
-  margin-left: 15px;
-}
-
-.card_content {
-  color: #6e7e91;
-  font-size: 15px;
-}
-
-/* navbar */
-.navbar {
-  display: flex;
-}
-
-.navItems {
-  display: flex;
-}
-
-.navItem {
-  margin-right: 20px;
-  text-decoration: none;
-  color: #354358;
-  font-size: 20px;
-}
-
-.navItem:hover {
-  text-decoration: none;
-  color: #000;
-}
-
-a {
-  color: #354358;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-.image_custom {
-  height: 110px;
-  width: 110px;
-}
-
-/* resume */
-.resume_section {
-  height: 70vh;
-  padding-top: 10px;
-  overflow-y: auto;
-}
-.resume_card_year {
-  font-size: 0.9rem;
-  font-weight: 600;
-}
-.resume_card_body {
-  margin-top: 10px;
-}
-
-.resume_card_title h6 {
-  font-weight: 700;
-}
-
-.resume_card_title span {
-  font-weight: 700;
-  font-size: 0.85rem;
-}
-
-.resume_card_description {
-  font-size: 13px;
-  padding-top: 5px;
-}
-
-.skill_div {
-  padding-bottom: 20px;
-}
-
-.skill_wrapper {
-  width: 90%;
-  background-color: #f1f2f3;
-  border-radius: 20px;
-}
-
-.skill_beg {
-  width: 45%;
-}
-
-.skill_avg {
-  width: 65%;
-}
-
-.skill_verygood {
-  width: 80%;
-}
-
-.skill_exp {
-  width: 95%;
-}
-
-.skill {
-  background-image: linear-gradient(to right, #00f260, #0575e6);
-  border-radius: 20px;
-  color: #fff;
-  padding: 4px 14px;
-  display: flex;
-  justify-content: space-between;
-  font-size: 14px;
-  margin-bottom: 8px;
-}
-
-/* project section */
-.projects_section {
-  height: 70vh;
-  padding-top: 30px;
-  overflow-y: auto;
-}
-
-.projects_section_header {
-  margin-bottom: 20px;
-}
-
-.project_header_child {
-  margin-right: 15px;
-}
-
-.project_header_child:hover {
-  cursor: pointer;
-  color: #000;
-}
-
-/* .project_card {
-    height: 300px;
-} */
-.project_card {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.project_name {
-  font-size: 17px;
-}
-.project_wrapper .btn {
-  height: 30px;
-  text-align: center;
-  font-size: 0.85rem;
-  font-weight: 900;
-}
-
-@media screen and (max-width: 991px) {
-  .mainarea_custom {
-    margin: 30px 0;
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 
-.project_wrapper {
-  height: 100%;
-  width: 100%;
-  min-height: 140px;
-  text-align: center;
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
 }
 
-.project_image {
-  border-radius: 20px;
-  border: 1px solid #00f260;
-  width: 100%;
-  height: 80%;
+.card {
+  padding: 2em;
 }
 
-.project_image:hover {
-  transform: scale(1.02);
-  transition: 0.2s linear;
+.read-the-docs {
+  color: #888;
 }
