@@ -36,7 +36,7 @@ const Projects = () => {
                 "Implemented real-time buy/sell automation and Cron-based background jobs.",
                 "Built and integrated frontend components with backend REST APIs."
             ],
-            tags: ["MERN Stack", "Cron Jobs", "Real-time", "FinTech"]
+            tags: ["MERN Stack", "Cron Jobs", "Real-time"]
         },
         {
             title: "IIoT Monitoring Dashboard",
