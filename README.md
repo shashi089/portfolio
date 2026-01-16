@@ -1,6 +1,6 @@
 # Portfolio - Shashidhar Naik
 
-A modern, responsive portfolio website showcasing my professional experience, projects, and skills as a Software Engineer II specializing in MERN & MEVN stack development.
+A modern, responsive portfolio website showcasing my professional experience, projects, and skills as a Software Engineer II specializing in MERN & MEVN stack development. Features an interactive **AI Portfolio Assistant** to guide visitors.
 
 ## 🚀 Live Demo
 
@@ -12,35 +12,34 @@ This portfolio represents my journey as a full-stack developer with 4+ years of 
 
 ## ✨ Features
 
-- **Modern Design**: Sleek, dark-themed UI with gradient accents and smooth animations
-- **Responsive Layout**: Fully responsive design that works seamlessly across all devices
+- **🤖 AI Portfolio Assistant**: A smart, interactive chat assistant that answers questions about my experience, projects, and skills.
+- **Modern Design**: Sleek, dark-themed UI with gradient accents, glassmorphism effects, and smooth animations.
+- **Responsive Layout**: Fully responsive design that works seamlessly across all devices.
 - **Interactive Sections**:
-  - Hero section with animated introduction
-  - About section with categorized skills
-  - Professional experience timeline with expandable details
-  - Featured projects showcase with modal details
-  - Education timeline
-  - Contact section with social links
-- **Smooth Animations**: Powered by Framer Motion for engaging user experience
-- **Smooth Scrolling**: React Scroll integration for seamless navigation
-- **Performance Optimized**: Built with Vite for lightning-fast load times
+  - **Hero**: Animated introduction with call-to-actions.
+  - **About**: Categorized skills display.
+  - **Experience**: Expandable timeline of professional history.
+  - **Projects**: Grid showcase with detailed modal views for in-depth information.
+  - **Education**: Timeline of academic background.
+  - **Contact**: Social links and direct contact info.
+- **Smooth Animations**: Powered by Framer Motion for engaging user experience.
+- **Seamless Navigation**: React Scroll integration for smooth page transitions.
+- **Performance Optimized**: Built with Vite and code-splitting for lightning-fast load times.
 
 ## 🛠️ Tech Stack
 
 ### Frontend
-- **React 19.2.0** - UI library
-- **TypeScript** - Type safety and better developer experience
-- **Vite** - Next-generation frontend tooling
-- **Tailwind CSS 4.1** - Utility-first CSS framework
-- **Framer Motion** - Animation library
-- **Lucide React** - Beautiful icon library
-- **React Scroll** - Smooth scrolling navigation
+- **React 19** - UI library
+- **TypeScript** - Type safety and enterprise-grade code quality
+- **Vite** - High-speed build tool
+- **Tailwind CSS 4** - Utility-first styling with custom configurations
+- **Framer Motion** - Complex animations and layout transitions
+- **Lucide React** - Iconography
+- **React Scroll** - Navigation behavior
 
 ### Development Tools
-- **ESLint** - Code linting
-- **TypeScript ESLint** - TypeScript-specific linting rules
-- **PostCSS** - CSS processing
-- **Autoprefixer** - CSS vendor prefixing
+- **ESLint** & **TypeScript ESLint**- Code quality and linting
+- **PostCSS** & **Autoprefixer** - CSS processing
 
 ## 📂 Project Structure
 
@@ -48,25 +47,25 @@ This portfolio represents my journey as a full-stack developer with 4+ years of 
 portfolio/
 ├── src/
 │   ├── components/
-│   │   ├── Header.tsx       # Navigation header
-│   │   ├── Hero.tsx         # Hero section with introduction
-│   │   ├── About.tsx        # Skills and about section
-│   │   ├── Experience.tsx   # Professional experience timeline
-│   │   ├── Projects.tsx     # Featured projects showcase
-│   │   ├── Education.tsx    # Education timeline
-│   │   ├── Contact.tsx      # Contact information
-│   │   └── Footer.tsx       # Footer section
-│   ├── App.tsx              # Main app component
-│   ├── main.tsx             # Application entry point
-│   ├── index.css            # Global styles
-│   └── App.css              # App-specific styles
+│   │   ├── Header.tsx              # Navigation header
+│   │   ├── Hero.tsx                # Hero section
+│   │   ├── About.tsx               # Skills and bio
+│   │   ├── Experience.tsx          # Professional timeline
+│   │   ├── Projects.tsx            # Project showcase with modals
+│   │   ├── Education.tsx           # Academic timeline
+│   │   ├── Contact.tsx             # Contact section
+│   │   ├── PortfolioAssistant.tsx  # AI Chatbot component
+│   │   └── Footer.tsx              # Footer
+│   ├── App.tsx                     # Main layout
+│   ├── main.tsx                    # Entry point
+│   ├── index.css                   # Global styles & Tailwind
+│   └── App.css                     # Additional styles
 ├── public/
-│   └── Shashidhar_Naik_2025.pdf  # Resume/CV
-├── dist/                    # Production build
+│   └── Shashidhar_Naik_2025.pdf    # Resume
+├── dist/                           # Production build output
 ├── package.json
 ├── tsconfig.json
-├── vite.config.ts
-└── README.md
+└── vite.config.ts
 ```
 
 ## 🚀 Getting Started
@@ -94,94 +93,52 @@ npm install
 npm run dev
 ```
 
-4. Open your browser and visit `http://localhost:5173`
+4. Open `http://localhost:5173` in your browser.
 
-## 📜 Available Scripts
+## 📜 Scripts
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run lint` - Run ESLint
-- `npm run preview` - Preview production build locally
+- `npm run dev`: Start local development server
+- `npm run build`: Type-check and build for production
+- `npm run lint`: Run code linting
+- `npm run preview`: Preview the production build locally
 
-## 🎨 Customization
+## 🎨 Customization Guide
 
-### Updating Personal Information
+### Updating Content
 
-1. **Hero Section**: Edit `src/components/Hero.tsx`
-   - Update name, title, and description
-   - Modify social media links
+1.  **AI Assistant**: Edit `src/components/PortfolioAssistant.tsx`.
+    *   Update `experienceData` and `projectData` arrays to change the bot's knowledge base.
+    *   Modify `generateResponse` logic for custom Q&A flows.
+2.  **Personal Info**: Edit `src/components/Hero.tsx` for name, titles, and social links.
+3.  **Experience**: Update the `jobs` array in `src/components/Experience.tsx`.
+4.  **Projects**: Modify the `projects` array in `src/components/Projects.tsx` to add/remove projects.
+5.  **Styles**: The project uses **Tailwind CSS**. Customize colors and theme in `index.css` or direct utility classes.
 
-2. **About Section**: Edit `src/components/About.tsx`
-   - Update skills and categories
-   - Modify the about description
+### Theme
 
-3. **Experience**: Edit `src/components/Experience.tsx`
-   - Add/update job positions
-   - Modify responsibilities and tech stack
+- **Primary**: Violet (`violet-500`, `violet-600`) - Used for accents, buttons, and highlgihts.
+- **Background**: Slate (`slate-900`, `slate-950`) - Deep dark mode base.
+- **Components**: Glassmorphism (`bg-slate-800/50`, `backdrop-blur`) for cards and modals.
 
-4. **Projects**: Edit `src/components/Projects.tsx`
-   - Add/update project details
-   - Modify project descriptions and tags
+## � Deployment
 
-5. **Education**: Edit `src/components/Education.tsx`
-   - Update educational qualifications
-
-6. **Contact**: Edit `src/components/Contact.tsx`
-   - Update contact information and social links
-
-### Styling
-
-The project uses Tailwind CSS for styling. Main color scheme:
-- Primary: Violet (`violet-500`, `violet-600`)
-- Secondary: Pink (`pink-400`, `pink-600`)
-- Background: Slate (`slate-900`, `slate-950`)
-
-Modify colors in the component files or extend the Tailwind configuration.
-
-## 📦 Building for Production
-
-```bash
-npm run build
-```
-
-This creates an optimized production build in the `dist` folder.
-
-## 🚀 Deployment
-
-The portfolio can be deployed to various platforms:
-
-### Netlify
-```bash
-npm run build
-# Deploy the dist folder
-```
-
-### Vercel
-```bash
-npm run build
-# Deploy the dist folder
-```
+### Netlify / Vercel
+1.  Connect your GitHub repo.
+2.  Set build command: `npm run build`
+3.  Set publish directory: `dist`
 
 ### GitHub Pages
-1. Build the project: `npm run build`
-2. Deploy the `dist` folder to GitHub Pages
+1.  Build: `npm run build`
+2.  Deploy the contents of `dist` to your `gh-pages` branch.
 
 ## 🔗 Connect
 
 - **GitHub**: [github.com/shashi089](https://github.com/shashi089)
 - **LinkedIn**: [linkedin.com/in/shashidhar-naik-aab5b512a](https://www.linkedin.com/in/shashidhar-naik-aab5b512a/)
-- **Email**: [Your Email]
 
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 🙏 Acknowledgments
-
-- Icons by [Lucide](https://lucide.dev/)
-- Animations by [Framer Motion](https://www.framer.com/motion/)
-- Built with [Vite](https://vitejs.dev/) and [React](https://react.dev/)
-
 ---
-
-**Note**: This portfolio is continuously updated with new projects and experiences. Feel free to fork and customize it for your own use!
+**Note**: This portfolio is continuously updated. The **Portfolio Assistant** is a beta feature designed to enhance visitor engagement.
