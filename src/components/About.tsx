@@ -11,7 +11,7 @@ const About = () => {
         {
             category: "Backend & APIs",
             icon: <Server className="w-6 h-6 text-pink-400" />,
-            items: ["Node.js", "Express.js", "RESTful APIs", "API Integration"]
+            items: ["Node.js", "Express.js", "RESTful APIs","Python","FastAPI"]
         },
         {
             category: "Database & Cloud",
