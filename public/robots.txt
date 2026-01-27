@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /private/
 
 Sitemap: https://shashidhar-portfolio.netlify.app/sitemap.xml

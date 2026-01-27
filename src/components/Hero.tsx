@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from 'framer-motion';
 import { Download, Github, Linkedin } from 'lucide-react';
 import { Link } from 'react-scroll';

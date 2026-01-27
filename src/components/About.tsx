@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from 'framer-motion';
 import { Database, Globe, Server, Cpu } from 'lucide-react';
 
@@ -11,7 +13,7 @@ const About = () => {
         {
             category: "Backend & APIs",
             icon: <Server className="w-6 h-6 text-pink-400" />,
-            items: ["Node.js", "Express.js", "RESTful APIs","Python","FastAPI"]
+            items: ["Node.js", "Express.js", "RESTful APIs", "Python", "FastAPI"]
         },
         {
             category: "Database & Cloud",
@@ -40,6 +42,7 @@ const About = () => {
                         I am a <span className="text-violet-400 font-semibold">Software Engineer II</span> with 4+ years of experience in building scalable, enterprise-grade web applications.
                         Currently, I lead frontend delivery for a major <span className="text-pink-400">Warehouse Management System (WMS)</span>.
                         My journey includes transitioning from technical support to full-stack development, driven by a passion for solving complex problems through code.
+                        Beyond my core work, I am an active open-source contributor, creating tools like <span className="text-violet-400">qrlayout</span> to empower other developers.
                     </p>
                 </motion.div>
 

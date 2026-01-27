@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ExternalLink, Tag, X } from 'lucide-react';
@@ -8,6 +10,7 @@ interface Project {
     desc: string;
     fullDesc?: string[];
     tags: string[];
+    links?: { label: string; url: string; icon?: React.ReactNode }[];
 }
 
 const Projects = () => {
@@ -36,7 +39,7 @@ const Projects = () => {
                 "Implemented real-time buy/sell automation and Cron-based background jobs.",
                 "Built and integrated frontend components with backend REST APIs."
             ],
-            tags: ["MERN Stack", "Cron Jobs", "Real-time","Python"]
+            tags: ["MERN Stack", "Cron Jobs", "Real-time", "Python"]
         },
         {
             title: "IIoT Monitoring Dashboard",
@@ -49,6 +52,22 @@ const Projects = () => {
                 "Developed Shift Management and Production Planning modules."
             ],
             tags: ["Vue.js", "Node.js", "Charts", "Analytics"]
+        },
+        {
+            title: "QR Layout Designer & Libraries",
+            role: "Open Source Contributor",
+            desc: "A suite of tools for designing and printing QR labels.",
+            fullDesc: [
+                "Developed `qrlayout-core`: A core logic library for QR layout generation.",
+                "Developed `qrlayout-ui`: A UI component library for the designer.",
+                "Built a comprehensive demo application to showcase the libraries."
+            ],
+            tags: ["Open Source", "NPM", "React", "TypeScript"],
+            links: [
+                { label: "qrlayout-core", url: "https://www.npmjs.com/package/qrlayout-core" },
+                { label: "qrlayout-ui", url: "https://www.npmjs.com/package/qrlayout-ui" },
+                { label: "Demo App", url: "https://qr-layout-designer.netlify.app/" }
+            ]
         },
         {
             title: "E-Commerce Application",
@@ -71,7 +90,8 @@ const Projects = () => {
                 "Implemented secure authentication and role-based access."
             ],
             tags: ["React.js", "Bootstrap", "Node.js", "Express", "MongoDB"]
-        }
+        },
+
     ];
 
     return (
@@ -181,6 +201,27 @@ const Projects = () => {
                                         ))}
                                     </div>
                                 </div>
+
+
+                                {selectedProject.links && (
+                                    <div className="space-y-4 mt-8 pt-6 border-t border-slate-800">
+                                        <h4 className="text-sm font-semibold text-slate-500 uppercase tracking-wider">Links</h4>
+                                        <div className="flex flex-wrap gap-3">
+                                            {selectedProject.links.map((link, i) => (
+                                                <a
+                                                    key={i}
+                                                    href={link.url}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="flex items-center gap-2 px-4 py-2 bg-violet-600/10 hover:bg-violet-600/20 text-violet-400 hover:text-violet-300 rounded-lg transition-colors border border-violet-500/20 hover:border-violet-500/40 text-sm font-medium"
+                                                >
+                                                    {link.label}
+                                                    <ExternalLink className="w-4 h-4" />
+                                                </a>
+                                            ))}
+                                        </div>
+                                    </div>
+                                )}
                             </motion.div>
                         </div>
                     )}

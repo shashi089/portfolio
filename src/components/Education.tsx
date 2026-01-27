@@ -1,3 +1,4 @@
+"use client";
 
 import { motion } from 'framer-motion';
 import { GraduationCap, Calendar, Award } from 'lucide-react';
