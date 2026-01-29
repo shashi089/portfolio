@@ -1,114 +1,109 @@
-# Portfolio - Shashidhar Naik
+# 🚀 Shashidhar Naik | Full Stack Software Engineer Portfolio
 
-A modern, responsive portfolio website showcasing my professional experience, projects, and skills as a Software Engineer II specializing in MERN & MEVN stack development. Features an interactive **AI Portfolio Assistant** to guide visitors.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/your-id-here/deploy-status)](https://shashidhar-portfolio.netlify.app/)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![Next.js](https://img.shields.io/badge/Framework-Next.js%2016-black?style=flat&logo=next.js)](https://nextjs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Styling-Tailwind%20CSS%204-06B6D4?style=flat&logo=tailwindcss)](https://tailwindcss.com/)
 
-## 🚀 Live Demo
+A premium, SEO-optimized portfolio website for **Shashidhar Naik**, a Senior Software Engineer specializing in building scalable enterprise web applications with the **MERN** (MongoDB, Express, React, Node.js) and **MEVN** (Vue.js instead of React) stacks.
 
-Visit the live portfolio: [https://shashidhar-portfolio.netlify.app/]
+---
 
-## 👨‍💻 About
+## 🎨 Preview
 
-This portfolio represents my journey as a full-stack developer with 4+ years of experience building scalable enterprise web applications. Currently working as a Frontend Lead on a Warehouse Management System (WMS) at Cymbeline Innovation Pvt. Ltd (Client: Panasonic).
+![Shashidhar Naik Portfolio Hero Section](/public/portfolio_hero_section.png)
 
-## ✨ Features
+---
 
-- **🤖 AI Portfolio Assistant**: A smart, interactive chat assistant that answers questions about my experience, projects, and skills.
-- **Modern Design**: Sleek, dark-themed UI with gradient accents, glassmorphism effects, and smooth animations.
-- **Responsive Layout**: Fully responsive design that works seamlessly across all devices.
-- **Interactive Sections**:
-  - **About**: Categorized skills display.
-  - **Experience**: Expandable timeline of professional history.
-  - **Projects**: Grid showcase with detailed modal views.
-  - **Education**: Timeline of academic background.
-  - **Contact**: Social links and direct contact info.
-- **Smooth Animations**: Powered by Framer Motion.
-- **Performance Optimized**: Built with Next.js 16 (App Router) and Static Export.
+## 👨‍💻 Professional Summary
 
-## 🛠️ Tech Stack
+As a **Software Engineer II** at Cymbeline Innovation Pvt. Ltd, I lead frontend development for high-impact projects like the **Warehouse Management System (WMS)** for clients like **Panasonic**. My focus is on creating high-performance, user-centric interfaces and architecting robust full-stack solutions.
 
-### Frontend
-- **Next.js 16** - React Framework (App Router)
-- **React 19** - UI library
-- **TypeScript** - Type safety
-- **Tailwind CSS 4** - Utility-first styling
-- **Framer Motion** - Animations
-- **Lucide React** - Iconography
-- **React Scroll** - Navigation behavior
+### Key Expertise:
+- **Frontend Architecture**: React 19, Next.js 16, TypeScript, Tailwind CSS 4.
+- **Backend Systems**: Node.js, Express, MongoDB, RESTful APIs.
+- **State Management**: Redux Toolkit, React Context.
+- **Performance**: Static site generation (SSG), image optimization, smooth Framer Motion animations.
 
-## 📂 Project Structure
+---
 
-```
-next-portfolio/
-├── app/
-│   ├── layout.tsx              # Root layout & SEO
-│   ├── page.tsx                # Main page assembly
-│   └── globals.css             # Global styles & Tailwind
-├── components/
-│   ├── Header.tsx              # Navigation
-│   ├── Hero.tsx                # Hero section
-│   ├── About.tsx               # Skills
-│   ├── Experience.tsx          # Timeline
-│   ├── Projects.tsx            # Project grid
-│   ├── Education.tsx           # Academic info
-│   ├── Contact.tsx             # Contact info
-│   ├── PortfolioAssistant.tsx  # AI Chatbot
-│   └── Footer.tsx              # Footer
-├── public/                     # Static assets
-└── next.config.ts              # Export configuration
-```
+## ✨ Standout Features
 
-## 🚀 Getting Started
+- **🤖 AI Portfolio Assistant**: A custom-built chatbot that leverages LLMs to answer professional inquiries about my background.
+- **⚡ Blazing Fast Performance**: Built using Next.js App Router and optimized for high Core Web Vitals scores.
+- **🔍 Deep SEO Integration**: Implemented JSON-LD structured data, metadata for social sharing (OG/Twitter cards), and semantic HTML for search engine discoverability.
+- **💎 Premium UI/UX**: Features glassmorphism, responsive timelines, and interactive project galleries.
 
-### Prerequisites
+---
 
-- Node.js (v18 or higher)
-- npm or yarn
+## 🛠️ Technology Stack
 
-### Installation
+| Category | technologies |
+| :--- | :--- |
+| **Frameworks** | Next.js 16 (App Router), React 19 |
+| **Styling** | Tailwind CSS 4, Framer Motion (Animations) |
+| **Languages** | TypeScript, JavaScript (ES6+) |
+| **Icons** | Lucide React |
+| **Form/Scroll** | React Hook Form, React Scroll |
 
-1. Clone the repository:
+---
+
+## 📂 Project Architecture
+
 ```bash
-git clone https://github.com/shashi089/portfolio.git
-cd next-portfolio
+src/
+├── app/               # Next.js App Router (Layouts, Pages, Global Styles)
+├── components/        # High-performance UI Components (Hero, About, Projects, etc.)
+│   ├── ui/            # Reusable Atomic UI elements
+│   └── chat/          # AI Portfolio Assistant Logic
+├── public/            # Optimized Static Assets (Images, Favicons)
+└── lib/               # Utility functions and shared logic
 ```
 
-2. Install dependencies:
-```bash
-npm install
-```
+---
 
-3. Start the development server:
-```bash
-npm run dev
-```
+## 🚀 Local Development
 
-4. Open `http://localhost:3000` in your browser.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/shashi089/portfolio.git
+   cd portfolio
+   ```
 
-## 📜 Scripts
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-- `npm run dev`: Start local development server
-- `npm run build`: Build for production (Static Export)
-- `npm run lint`: Run code linting
+3. **Run the development server**:
+   ```bash
+   npm run dev
+   ```
 
-## 🚀 Deployment (Manual Netlify)
-
-This project is configured for **Static Export** (`output: 'export'`).
-
-1. Run the build command:
+4. **Build for production**:
    ```bash
    npm run build
    ```
-   This will create an `out` folder in the project root.
 
-2. **Drag and Drop**:
-   - Go to [Netlify Drop](https://app.netlify.com/drop).
-   - Drag the `out` folder into the upload area.
+---
 
-## 🔗 Connect
+## 🌍 Deployment (Netlify)
 
-- **GitHub**: [github.com/shashi089](https://github.com/shashi089)
-- **LinkedIn**: [linkedin.com/in/shashidhar-naik-aab5b512a](https://www.linkedin.com/in/shashidhar-naik-aab5b512a/)
+This project uses **Static Export** (`output: 'export'`) for maximum performance and SEO.
+
+1. Run `npm run build`.
+2. Deploy the `out/` directory to **Netlify** (via GitHub integration or CLI).
+
+---
+
+## 🔗 Connect with Me
+
+- **LinkedIn**: [Shashidhar Naik](https://www.linkedin.com/in/shashidhar-naik-aab5b512a/)
+- **GitHub**: [@shashi089](https://github.com/shashi089)
+- **Portfolio**: [shashidhar-portfolio.netlify.app](https://shashidhar-portfolio.netlify.app/)
+
+---
 
 ## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](LICENSE).
