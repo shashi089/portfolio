@@ -1,6 +1,7 @@
 # 🚀 Shashidhar Naik | Full Stack Software Engineer Portfolio
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/your-id-here/deploy-status)](https://shashidhar-portfolio.netlify.app/)
+## 🌐 [Visit Live Portfolio →](https://shashidhar-portfolio.netlify.app/)
+
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Next.js](https://img.shields.io/badge/Framework-Next.js%2016-black?style=flat&logo=next.js)](https://nextjs.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Styling-Tailwind%20CSS%204-06B6D4?style=flat&logo=tailwindcss)](https://tailwindcss.com/)
