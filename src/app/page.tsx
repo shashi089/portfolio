@@ -7,6 +7,7 @@ import Education from '@/components/Education';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import PortfolioAssistant from '@/components/PortfolioAssistant';
+import OpenSource from '@/components/OpenSource';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <About />
         <Experience />
         <Projects />
+        <OpenSource />
         <Education />
         <Contact />
       </main>

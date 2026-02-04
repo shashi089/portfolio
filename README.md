@@ -6,7 +6,7 @@
 [![Next.js](https://img.shields.io/badge/Framework-Next.js%2016-black?style=flat&logo=next.js)](https://nextjs.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Styling-Tailwind%20CSS%204-06B6D4?style=flat&logo=tailwindcss)](https://tailwindcss.com/)
 
-A premium, SEO-optimized portfolio website for **Shashidhar Naik**, a Senior Software Engineer specializing in building scalable enterprise web applications with the **MERN** (MongoDB, Express, React, Node.js) and **MEVN** (Vue.js instead of React) stacks.
+A premium, SEO-optimized portfolio website for **Shashidhar Naik**, a Senior Software Engineer specializing in building scalable enterprise web applications with the **MERN** (MongoDB, Express, React, Node.js) and **MEVN** (Vue.js instead of React) stacks. This portfolio showcases professional experience, open-source contributions, and expertise in modern web technologies including Next.js, TypeScript, and React.
 
 ---
 
@@ -30,10 +30,11 @@ As a **Software Engineer II** at Cymbeline Innovation Pvt. Ltd, I lead frontend 
 
 ## ✨ Standout Features
 
-- **🤖 AI Portfolio Assistant**: A custom-built chatbot that leverages LLMs to answer professional inquiries about my background.
-- **⚡ Blazing Fast Performance**: Built using Next.js App Router and optimized for high Core Web Vitals scores.
-- **🔍 Deep SEO Integration**: Implemented JSON-LD structured data, metadata for social sharing (OG/Twitter cards), and semantic HTML for search engine discoverability.
-- **💎 Premium UI/UX**: Features glassmorphism, responsive timelines, and interactive project galleries.
+- **🤖 AI Portfolio Assistant**: A custom-built chatbot that answers professional inquiries about my background, skills, and experience.
+- **📦 Open Source Contributions**: Published NPM packages including `qrlayout-core`, `qrlayout-ui`, and `env-drift-check` with 2k+ total downloads.
+- **⚡ Blazing Fast Performance**: Built using Next.js 16 App Router and optimized for high Core Web Vitals scores.
+- **🔍 Deep SEO Integration**: Implemented JSON-LD structured data, metadata for social sharing (OG/Twitter cards), sitemap, and semantic HTML for search engine discoverability.
+- **💎 Premium UI/UX**: Features glassmorphism, responsive timelines, interactive project galleries, and smooth Framer Motion animations.
 
 ---
 
@@ -49,16 +50,40 @@ As a **Software Engineer II** at Cymbeline Innovation Pvt. Ltd, I lead frontend 
 
 ---
 
+## 📦 Open Source Contributions
+
+I actively contribute to the developer community through open-source NPM packages:
+
+### Published Packages
+
+| Package | Description | Downloads | NPM Link |
+| :--- | :--- | :--- | :--- |
+| **qrlayout-core** | Core logic library for QR layout generation with TypeScript | 1k+ | [View Package](https://www.npmjs.com/package/qrlayout-core) |
+| **qrlayout-ui** | Framework-agnostic UI components for QR layout designer | 800+ | [View Package](https://www.npmjs.com/package/qrlayout-ui) |
+| **env-drift-check** | CLI tool to detect drift between .env files | 200+ | [View Package](https://www.npmjs.com/package/env-drift-check) |
+
+**Total Downloads**: 2k+ across all packages  
+**Tech Stack**: TypeScript, JavaScript, Node.js, React, Vue.js, Angular
+
+---
+
 ## 📂 Project Architecture
 
 ```bash
 src/
 ├── app/               # Next.js App Router (Layouts, Pages, Global Styles)
-├── components/        # High-performance UI Components (Hero, About, Projects, etc.)
-│   ├── ui/            # Reusable Atomic UI elements
-│   └── chat/          # AI Portfolio Assistant Logic
-├── public/            # Optimized Static Assets (Images, Favicons)
-└── lib/               # Utility functions and shared logic
+├── components/        # High-performance UI Components
+│   ├── Hero.tsx       # Landing section with social links
+│   ├── About.tsx      # Professional summary
+│   ├── Experience.tsx # Work history timeline
+│   ├── Projects.tsx   # Featured projects gallery
+│   ├── OpenSource.tsx # NPM packages showcase
+│   ├── Education.tsx  # Academic background
+│   ├── Contact.tsx    # Contact form
+│   ├── Header.tsx     # Navigation bar
+│   ├── Footer.tsx     # Footer section
+│   └── PortfolioAssistant.tsx # AI chatbot
+└── public/            # Static Assets (Images, Favicons, Sitemap)
 ```
 
 ---
@@ -101,6 +126,7 @@ This project uses **Static Export** (`output: 'export'`) for maximum performance
 
 - **LinkedIn**: [Shashidhar Naik](https://www.linkedin.com/in/shashidhar-naik-aab5b512a/)
 - **GitHub**: [@shashi089](https://github.com/shashi089)
+- **NPM**: [@shashidharlbs](https://www.npmjs.com/~shashidharlbs)
 - **Portfolio**: [shashidhar-portfolio.netlify.app](https://shashidhar-portfolio.netlify.app/)
 
 ---

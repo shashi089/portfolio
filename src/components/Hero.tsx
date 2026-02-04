@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import { Download, Github, Linkedin } from 'lucide-react';
+import { Download, Github, Linkedin, Package } from 'lucide-react';
 import { Link } from 'react-scroll';
 
 const Hero = () => {
@@ -40,8 +40,9 @@ const Hero = () => {
 
                     <div className="flex gap-6">
                         {[
-                            { icon: <Github />, href: 'https://github.com/shashi089' }, // Add actual link if known, otherwise placeholder
+                            { icon: <Github />, href: 'https://github.com/shashi089' },
                             { icon: <Linkedin />, href: 'https://www.linkedin.com/in/shashidhar-naik-aab5b512a/' },
+                            { icon: <Package />, href: 'https://www.npmjs.com/~shashidharlbs' },
                         ].map((social, index) => (
                             <a
                                 key={index}
