@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   description: "Senior Software Engineer specializing in MERN & MEVN stack. Expert in React, Next.js, Node.js, and scaling enterprise web applications.",
   keywords: [
     "Shashidhar Naik",
+    "Shashidhar Portfolio",
     "Software Engineer II",
     "Full Stack Developer",
     "MERN Stack Developer",

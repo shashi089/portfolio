@@ -30,7 +30,7 @@ const PortfolioAssistant = () => {
         {
             id: '1',
             type: 'bot',
-            text: "Hi there! I'm your personal portfolio assistant. Ask me anything about my skills, experience, or the projects I've worked on—I'm here to help!",
+            text: "Hi there! I'm Shashidhar's AI Assistant. Ask me anything about my WMS expertise, React/Next.js skills, or my professional background at Cymbeline Innovation!",
             timestamp: new Date()
         }
     ]);
@@ -41,14 +41,13 @@ const PortfolioAssistant = () => {
     const experienceData = [
         {
             company: "Cymbeline Innovation",
-            aliases: ["cymbeline", "panasonic"],
+            aliases: ["cymbeline", "panasonic", "current", "latest"],
             role: "Software Engineer II",
             points: [
-                "I work as a Software Engineer II and Frontend Lead on an enterprise Warehouse Management System (WMS).",
-                "My responsibilities include leading feature planning, ensuring on-time delivery, and assigning tasks to junior developers.",
-                "I collaborate with business stakeholders to gather requirements and refine workflows.",
-                "I develop reusable, scalable UI components using React, TypeScript, and Material UI.",
-                "I also integrate frontend modules with backend REST APIs."
+                "I currently serve as the Frontend Lead for the Panasonic WMS project.",
+                "I architect scalable React solutions, mentor junior developers, and drive feature planning directly with stakeholders.",
+                "My work ensures 99.9% system reliability for critical warehouse operations.",
+                "I heavily utilize TypeScript and Material UI to build robust, type-safe interfaces."
             ]
         },
         {
@@ -56,10 +55,9 @@ const PortfolioAssistant = () => {
             aliases: ["flyers", "flyers soft"],
             role: "Software Developer",
             points: [
-                "At Flyers Soft, I delivered frontend-heavy features using React.js, Nuxt.js, Vuetify, and Bootstrap.",
-                "I developed REST APIs using Node.js, Express.js, and TypeScript.",
-                "I also mentored interns and junior developers on best practices.",
-                "I assisted with deployment and production support on DigitalOcean."
+                "I specialized in delivering pixel-perfect frontend implementations using React.js and Nuxt.js.",
+                "I bridged the gap between design and implementation, ensuring 100% fidelity to Figma, Zeplin, and Adobe XD designs.",
+                "I also handled backend integrations and mentored interns on modern web practices."
             ]
         },
         {
@@ -67,10 +65,9 @@ const PortfolioAssistant = () => {
             aliases: ["triofi"],
             role: "Software Developer",
             points: [
-                "At Triofi, I developed reusable React components and frontend modules.",
-                "I built backend CRUD APIs using Node.js, Express, and TypeScript.",
-                "I proactively proposed and implemented UI/UX improvements.",
-                "I collaborated with QA and business teams for feature releases."
+                "This is where I honed my full-stack foundations.",
+                "I built end-to-end features, from designing database schemas in MongoDB to creating responsive UIs in React.",
+                "I focused on writing clean, reusable code and optimizing application performance."
             ]
         }
     ];
@@ -78,21 +75,21 @@ const PortfolioAssistant = () => {
     const projectData = [
         {
             title: "Warehouse Management System (WMS)",
-            aliases: ["wms", "warehouse"],
-            desc: "An enterprise IIoT solution for managing inventory, storage, and quality inspection.",
-            tech: "React, Material UI, IIoT"
+            aliases: ["wms", "warehouse", "logistics", "panasonic"],
+            desc: "an enterprise-grade solution for Panasonic that streamlined inventory, storage, and quality inspection workflows.",
+            tech: "React, Material UI, and integrated deeply with IIoT hardware"
         },
         {
             title: "Stock Automation Platform",
-            aliases: ["stock", "trading", "automation"],
-            desc: "An automated trading system with real-time buy/sell execution and Cron-based background jobs.",
-            tech: "MERN Stack, Cron Jobs, Real-time"
+            aliases: ["stock", "trading", "automation", "finance"],
+            desc: "a high-frequency automated trading system featuring real-time buy/sell execution and complex Cron-based background jobs.",
+            tech: "MERN Stack (MongoDB, Express, React, Node) with Socket.io for real-time updates"
         },
         {
             title: "IIoT Monitoring Dashboard",
-            aliases: ["iiot", "monitoring", "dashboard"],
-            desc: "A data visualization dashboard for machine health and production metrics with RBAC.",
-            tech: "Vue.js, Node.js, Analytics"
+            aliases: ["iiot", "monitoring", "dashboard", "analytics"],
+            desc: "a comprehensive data visualization tool for tracking machine health and production metrics in real-time, complete with Role-Based Access Control (RBAC).",
+            tech: "Vue.js, Node.js, and various Charting libraries"
         }
     ];
 
@@ -108,8 +105,8 @@ const PortfolioAssistant = () => {
         const lowerInput = input.toLowerCase();
 
         // Identity & About
-        if (lowerInput.includes('who are you') || lowerInput.includes('your name') || lowerInput.includes('about yourself')) {
-            return "I'm a Portfolio Assistant designed to help you navigate through my professional journey. I can guide you through my projects, experience, and skills.";
+        if (lowerInput.includes('who are you') || lowerInput.includes('your name') || lowerInput.includes('about yourself') || lowerInput.includes('intro')) {
+            return "I'm Shashidhar's AI Portfolio Assistant! I can help you explore his professional background, technical expertise, and key projects. Try asking, 'What is your tech stack?' or 'Tell me about your experience at Cymbeline'.";
         }
 
         // Specific Company Check
@@ -127,31 +124,35 @@ const PortfolioAssistant = () => {
         }
 
         // Broad Categories
-        if (lowerInput.includes('experience') || lowerInput.includes('history') || lowerInput.includes('work') || lowerInput.includes('job') || lowerInput.includes('role') || lowerInput.includes('responsibility')) {
-            return "I currently work as a Software Engineer II at Cymbeline Innovation. Before that, I was at Flyers Soft and Triofi Technologies. You can ask me 'What did you do at Cymbeline?' or 'Tell me about your role at Flyers'.";
+        if (lowerInput.includes('experience') || lowerInput.includes('history') || lowerInput.includes('work') || lowerInput.includes('job') || lowerInput.includes('career')) {
+            return "I have over 4 years of experience delivering high-performance web applications. My current role is Software Engineer II at Cymbeline Innovation, and previously I worked at Flyers Soft and Triofi Technologies.";
         }
 
         if (lowerInput.includes('project') || lowerInput.includes('built') || lowerInput.includes('portfolio') || lowerInput.includes('case study')) {
-            return "I've built several enterprise applications, including a WMS, a Stock Automation Platform, and an IIoT Dashboard. Ask me specifically about any of them!";
+            return "I've architected several enterprise-grade solutions, including a complex Warehouse Management System (WMS), a real-time Stock Automation Platform, and an IIoT Monitoring Dashboard. Which one would you like to know more about?";
         }
 
-        if (lowerInput.includes('skill') || lowerInput.includes('tech') || lowerInput.includes('stack') || lowerInput.includes('react') || lowerInput.includes('node') || lowerInput.includes('typescript')) {
-            return "My core stack includes React.js, TypeScript, Node.js, and MongoDB. I also have deep experience with Material UI, Tailwind CSS, and various backend technologies.";
+        if (lowerInput.includes('skill') || lowerInput.includes('tech') || lowerInput.includes('stack') || lowerInput.includes('react') || lowerInput.includes('node') || lowerInput.includes('next')) {
+            return "My technical arsenal matches a Senior Full Stack profile: Core (React 19, Next.js 16, TypeScript, Node.js), Styling (Tailwind CSS 4, Framer Motion), and Backend (MongoDB, Express). I also specialize in performance optimization and system architecture.";
         }
 
-        if (lowerInput.includes('contact') || lowerInput.includes('email') || lowerInput.includes('hire') || lowerInput.includes('reach')) {
-            return "I'd love to connect! You can find my contact details in the Contact section at the bottom of the page.";
+        if (lowerInput.includes('contact') || lowerInput.includes('email') || lowerInput.includes('hire') || lowerInput.includes('reach') || lowerInput.includes('call')) {
+            return "I'm always open to discussing new opportunities or collaborations! You can reach me via the Contact section below, or connect with me directly on LinkedIn.";
         }
 
-        if (lowerInput.includes('resume') || lowerInput.includes('cv')) {
-            return "You can likely find a download link or contact information to request my resume in the Navbar or Contact section.";
+        if (lowerInput.includes('resume') || lowerInput.includes('cv') || lowerInput.includes('download')) {
+            return "You can download my latest resume from the navigation bar or the 'Contact' section.";
         }
 
-        if (lowerInput.includes('hi') || lowerInput.includes('hello') || lowerInput.includes('hey')) {
-            return "Hello there! How can I help you today? Ask me about my experience, projects, or specific roles.";
+        if (lowerInput.includes('hi') || lowerInput.includes('hello') || lowerInput.includes('hey') || lowerInput.includes('greetings')) {
+            return "Hello! Great to have you here. I can tell you about my WMS project, my expertise in Next.js, or my work history. What's on your mind?";
         }
 
-        return "I'm not sure I quite understand. Try asking about specific companies (e.g., 'Cymbeline'), projects ('WMS'), or general topics like 'Experience' or 'Skills'.";
+        if (lowerInput.includes('why hire') || lowerInput.includes('strength') || lowerInput.includes('value')) {
+            return "You should hire me because I bring a blend of architectural vision and hands-on execution. I don't just write code; I build scalable, maintainable systems that drive business value, from optimizing WMS flows to ensuring SEO dominance.";
+        }
+
+        return "I'm still learning! Try asking about 'Experience', 'Projects', 'Tech Stack', or specific roles like 'WMS Lead' or 'Frontend Architect'.";
     };
 
     const handleSendMessage = async (e?: React.FormEvent) => {
