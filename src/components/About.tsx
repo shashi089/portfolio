@@ -28,7 +28,7 @@ const About = () => {
     ];
 
     return (
-        <section id="about" className="py-20 bg-slate-900/30 relative">
+        <section id="about" aria-label="About Shashidhar Naik" className="py-20 bg-slate-900/30 relative">
             <div className="container mx-auto px-4 md:px-8">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}

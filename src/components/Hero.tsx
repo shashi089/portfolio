@@ -6,7 +6,7 @@ import { Link } from 'react-scroll';
 
 const Hero = () => {
     return (
-        <section id="home" className="min-h-screen flex items-center pt-20 relative overflow-hidden">
+        <section id="home" aria-label="Hero — Introduction" className="min-h-screen flex items-center pt-20 relative overflow-hidden">
             {/* Background Elements */}
             <div className="absolute top-20 right-0 w-96 h-96 bg-violet-600/20 rounded-full blur-[100px] -z-10" />
             <div className="absolute bottom-20 left-0 w-72 h-72 bg-pink-600/20 rounded-full blur-[100px] -z-10" />
@@ -38,15 +38,19 @@ const Hero = () => {
                         </a>
                     </div>
 
-                    <div className="flex gap-6">
+                    <div className="flex gap-6" role="list" aria-label="Social profiles">
                         {[
-                            { icon: <Github />, href: 'https://github.com/shashi089' },
-                            { icon: <Linkedin />, href: 'https://www.linkedin.com/in/shashidhar-naik-aab5b512a/' },
-                            { icon: <Package />, href: 'https://www.npmjs.com/~shashidharlbs' },
+                            { icon: <Github aria-hidden="true" />, href: 'https://github.com/shashi089', label: 'GitHub profile — shashi089' },
+                            { icon: <Linkedin aria-hidden="true" />, href: 'https://www.linkedin.com/in/shashidhar-naik-aab5b512a/', label: 'LinkedIn profile — Shashidhar Naik' },
+                            { icon: <Package aria-hidden="true" />, href: 'https://www.npmjs.com/~shashidharlbs', label: 'NPM packages by Shashidhar Naik' },
                         ].map((social, index) => (
                             <a
                                 key={index}
                                 href={social.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label={social.label}
+                                role="listitem"
                                 className="p-3 bg-slate-800/50 hover:bg-violet-600/20 hover:text-violet-400 text-slate-400 rounded-full transition-all border border-slate-700/50 hover:border-violet-500/50"
                             >
                                 {social.icon}

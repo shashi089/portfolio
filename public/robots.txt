@@ -1,5 +1,28 @@
+# robots.txt — Shashidhar Naik Portfolio
+# https://shashidhar-portfolio.netlify.app
+
 User-agent: *
 Allow: /
-Disallow: /private/
 
+# Block any build/source artifacts if they ever appear
+Disallow: /_next/
+Disallow: /api/
+
+# Allow major crawlers unrestricted access
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Sitemap location
 Sitemap: https://shashidhar-portfolio.netlify.app/sitemap.xml

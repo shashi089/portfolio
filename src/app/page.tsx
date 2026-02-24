@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div className="bg-slate-950 min-h-screen text-slate-200 selection:bg-violet-500/30">
       <Header />
-      <main>
+      <main aria-label="Portfolio Content">
         <Hero />
         <About />
         <Experience />

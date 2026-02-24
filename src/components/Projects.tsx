@@ -95,7 +95,7 @@ const Projects = () => {
     ];
 
     return (
-        <section id="projects" className="py-20 bg-slate-900/30">
+        <section id="projects" aria-label="Featured Software Projects" className="py-20 bg-slate-900/30">
             <div className="container mx-auto px-4 md:px-8">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}

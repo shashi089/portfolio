@@ -95,7 +95,7 @@ const Experience = () => {
     ];
 
     return (
-        <section id="experience" className="py-20 relative">
+        <section id="experience" aria-label="Professional Experience" className="py-20 relative">
             <div className="container mx-auto px-4 md:px-8">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}

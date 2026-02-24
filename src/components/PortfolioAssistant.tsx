@@ -30,7 +30,7 @@ const PortfolioAssistant = () => {
         {
             id: '1',
             type: 'bot',
-            text: "Hi there! I'm Shashidhar's AI Assistant. Ask me anything about my WMS expertise, React/Next.js skills, or my professional background at Cymbeline Innovation!",
+            text: "Hi there! I'm Shashidhar's AI Assistant. Ask me anything about his WMS expertise, React/Next.js skills, open-source packages, or professional background!",
             timestamp: new Date()
         }
     ]);
@@ -38,58 +38,206 @@ const PortfolioAssistant = () => {
     const [isTyping, setIsTyping] = useState(false);
     const messagesEndRef = useRef<HTMLDivElement>(null);
 
+    // ── Experience Data (all 6 roles) ──────────────────────────────────────
     const experienceData = [
         {
             company: "Cymbeline Innovation",
-            aliases: ["cymbeline", "panasonic", "current", "latest"],
             role: "Software Engineer II",
+            period: "Feb 2025 - Present",
+            aliases: ["software engineer ii", "cymbeline", "panasonic", "current", "latest", "wms lead", "frontend lead"],
             points: [
-                "I currently serve as the Frontend Lead for the Panasonic WMS project.",
-                "I architect scalable React solutions, mentor junior developers, and drive feature planning directly with stakeholders.",
-                "My work ensures 99.9% system reliability for critical warehouse operations.",
-                "I heavily utilize TypeScript and Material UI to build robust, type-safe interfaces."
+                "Currently serving as Frontend Lead on the enterprise Panasonic Warehouse Management System (WMS).",
+                "Own frontend delivery using React.js, TypeScript, and Material UI.",
+                "Lead feature planning and execution within sprint timelines, assign tasks to junior developers, and resolve blockers.",
+                "Collaborate with business stakeholders to gather requirements and refine workflows.",
+                "Implement role-based access control (RBAC) at the UI level.",
+                "Integrate frontend modules with backend REST APIs for inventory, storage, reporting, and dashboards.",
+                "Ensure 99.9% system reliability for critical warehouse operations."
+            ]
+        },
+        {
+            company: "Cymbeline Innovation",
+            role: "Software Engineer I",
+            period: "Feb 2024 - Jan 2025",
+            aliases: ["software engineer i", "se1", "stock"],
+            points: [
+                "Contributed as Software Engineer I on Stock Automation and early-phase WMS feature development.",
+                "Developed frontend modules using React.js, TypeScript, and Material UI.",
+                "Implemented UI flows for automated stock trading and monitoring dashboards.",
+                "Built and integrated frontend components with backend REST APIs (Node.js, Express, MongoDB, Python, PostgreSQL).",
+                "Demonstrated strong ownership and consistency, leading to promotion to Software Engineer II."
             ]
         },
         {
             company: "Flyers Soft",
-            aliases: ["flyers", "flyers soft"],
             role: "Software Developer",
+            period: "Jan 2023 - Jan 2024",
+            aliases: ["flyers", "flyers soft"],
             points: [
-                "I specialized in delivering pixel-perfect frontend implementations using React.js and Nuxt.js.",
-                "I bridged the gap between design and implementation, ensuring 100% fidelity to Figma, Zeplin, and Adobe XD designs.",
-                "I also handled backend integrations and mentored interns on modern web practices."
+                "Delivered frontend-heavy features using React.js, Nuxt.js, Vuetify, and Bootstrap.",
+                "Developed REST APIs using Node.js, Express.js, and TypeScript.",
+                "Implemented pixel-perfect UI from Figma, Zeplin, and Adobe XD designs.",
+                "Mentored interns and junior developers on JavaScript, Git, and development best practices.",
+                "Assisted with deployment and production support on DigitalOcean."
             ]
         },
         {
             company: "Triofi Technologies",
-            aliases: ["triofi"],
             role: "Software Developer",
+            period: "Dec 2021 - Dec 2022",
+            aliases: ["triofi"],
             points: [
-                "This is where I honed my full-stack foundations.",
-                "I built end-to-end features, from designing database schemas in MongoDB to creating responsive UIs in React.",
-                "I focused on writing clean, reusable code and optimizing application performance."
+                "Developed reusable React components and frontend modules.",
+                "Built backend CRUD APIs using Node.js, Express, and TypeScript.",
+                "Proposed and implemented UI/UX improvements.",
+                "Collaborated with QA and business teams for feature releases.",
+                "Joined as Intern (Dec 2021 – Feb 2022); converted to Full-Time Developer based on performance."
+            ]
+        },
+        {
+            company: "Vindhya e-infomedia",
+            role: "Assistant Team Lead",
+            period: "Jan 2019 - Dec 2020",
+            aliases: ["vindhya", "team lead", "assistant team lead"],
+            points: [
+                "Coordinated with Level 1 technical support engineers to handle escalated issues.",
+                "Provided real-time guidance during complex troubleshooting scenarios.",
+                "Onboarded, mentored, and trained junior technical support engineers, improving team readiness."
+            ]
+        },
+        {
+            company: "Microsys",
+            role: "Technical Support Engineer",
+            period: "Oct 2017 - Dec 2018",
+            aliases: ["microsys", "technical support"],
+            points: [
+                "Delivered first-level technical support for application installation, configuration, and basic networking.",
+                "Conducted end-user training sessions on a mechanical-industry billing application.",
+                "This role marked the beginning of his professional journey before transitioning to software development."
             ]
         }
     ];
 
+    // ── Project Data (all 6 projects) ──────────────────────────────────────
     const projectData = [
         {
             title: "Warehouse Management System (WMS)",
-            aliases: ["wms", "warehouse", "logistics", "panasonic"],
-            desc: "an enterprise-grade solution for Panasonic that streamlined inventory, storage, and quality inspection workflows.",
-            tech: "React, Material UI, and integrated deeply with IIoT hardware"
+            aliases: ["wms", "warehouse", "logistics", "inventory", "qr tracking"],
+            desc: "an enterprise-grade IIoT solution for Panasonic that manages inventory, storage IN/OUT, quality inspection, and BOM modules.",
+            tech: "React.js, TypeScript, Material UI, integrated with IIoT hardware and REST APIs",
+            highlights: [
+                "Led frontend delivery for Inventory, Storage IN/OUT, Quality Inspection, and BOM modules.",
+                "Implemented QR-based tracking and CSV bulk upload workflows.",
+                "Built real-time dashboards for multi-warehouse inventory visibility.",
+                "Implemented role-based access control (RBAC) at the UI level."
+            ]
         },
         {
             title: "Stock Automation Platform",
-            aliases: ["stock", "trading", "automation", "finance"],
-            desc: "a high-frequency automated trading system featuring real-time buy/sell execution and complex Cron-based background jobs.",
-            tech: "MERN Stack (MongoDB, Express, React, Node) with Socket.io for real-time updates"
+            aliases: ["stock", "trading", "automation", "finance", "cron"],
+            desc: "a high-frequency automated trading system featuring real-time buy/sell execution and Cron-based background jobs.",
+            tech: "MERN Stack (MongoDB, Express, React, Node.js), Python, PostgreSQL, Socket.io for real-time updates",
+            highlights: [
+                "Developed automated stock trading workflows integrated with broker APIs.",
+                "Implemented real-time buy/sell automation and Cron-based background jobs.",
+                "Built comprehensive monitoring dashboards for trading activity."
+            ]
         },
         {
             title: "IIoT Monitoring Dashboard",
-            aliases: ["iiot", "monitoring", "dashboard", "analytics"],
-            desc: "a comprehensive data visualization tool for tracking machine health and production metrics in real-time, complete with Role-Based Access Control (RBAC).",
-            tech: "Vue.js, Node.js, and various Charting libraries"
+            aliases: ["iiot", "monitoring", "dashboard", "analytics", "machine health", "production"],
+            desc: "a comprehensive data visualization platform for tracking machine health, production metrics, and shift management in real-time, with Role-Based Access Control (RBAC).",
+            tech: "Vue.js, Node.js, charting libraries (MEVN Stack)",
+            highlights: [
+                "Developed data visualization dashboard for machine health and performance trends.",
+                "Implemented User Management with role-based access control (RBAC).",
+                "Developed Shift Management and Production Planning modules."
+            ]
+        },
+        {
+            title: "QR Layout Designer & Libraries",
+            aliases: ["qr", "qrlayout", "qrlayout-core", "qrlayout-ui", "npm library", "open source project", "layout designer"],
+            desc: "an open-source suite of NPM tools for designing and printing QR labels. Includes qrlayout-core (logic library) and qrlayout-ui (framework-agnostic UI components).",
+            tech: "TypeScript, JavaScript, React, framework-agnostic design",
+            highlights: [
+                "Published qrlayout-core to NPM: https://www.npmjs.com/package/qrlayout-core",
+                "Published qrlayout-ui to NPM: https://www.npmjs.com/package/qrlayout-ui",
+                "Built a comprehensive demo app: https://qr-layout-designer.netlify.app/"
+            ]
+        },
+        {
+            title: "E-Commerce Application",
+            aliases: ["ecommerce", "e-commerce", "shopping", "cart", "product"],
+            desc: "a responsive e-commerce platform with product catalog, filtering, and shopping cart functionality.",
+            tech: "React.js, Bootstrap, JavaScript",
+            highlights: [
+                "Built responsive UI using Bootstrap and custom CSS.",
+                "Implemented product filtering, search, and cart functionality.",
+                "Optimized for performance and mobile devices."
+            ]
+        },
+        {
+            title: "HR Management System (HRMS)",
+            aliases: ["hrms", "hr", "human resource", "payroll", "attendance", "employee management"],
+            desc: "a comprehensive HR solution for employee management, payroll processing, and attendance tracking with secure authentication.",
+            tech: "React.js, Bootstrap, Node.js, Express, MongoDB",
+            highlights: [
+                "Developed comprehensive employee management modules.",
+                "Built backend for payroll processing and attendance tracking.",
+                "Implemented secure authentication and role-based access."
+            ]
+        }
+    ];
+
+    // ── Open Source Packages ───────────────────────────────────────────────
+    const openSourceData = [
+        {
+            name: "qrlayout-core",
+            aliases: ["qrlayout-core", "core library", "qr core"],
+            desc: "A powerful core logic library for QR layout generation, handling complex calculations for sizing and positioning.",
+            url: "https://www.npmjs.com/package/qrlayout-core",
+            stats: "1k+ downloads"
+        },
+        {
+            name: "qrlayout-ui",
+            aliases: ["qrlayout-ui", "ui library", "qr ui"],
+            desc: "A framework-agnostic UI component library for qrlayout-core. Works seamlessly with React, Vue, Angular, or Vanilla JS.",
+            url: "https://www.npmjs.com/package/qrlayout-ui",
+            stats: "800+ downloads"
+        },
+        {
+            name: "env-drift-check",
+            aliases: ["env-drift-check", "envwise", "env cli", "dotenv check", "environment check"],
+            desc: "A CLI tool to detect drift between .env.example / .env.template and your actual .env files, ensuring environment consistency across teams.",
+            url: "https://www.npmjs.com/package/env-drift-check",
+            stats: "200+ downloads"
+        }
+    ];
+
+    // ── Skills Data ────────────────────────────────────────────────────────
+    const skillsData = {
+        frontend: ["React.js", "Nuxt.js", "Vue.js", "TypeScript", "JavaScript (ES6+)", "HTML5/CSS3", "Material UI", "Vuetify", "Bootstrap"],
+        backend: ["Node.js", "Express.js", "RESTful APIs", "Python", "FastAPI"],
+        database: ["MongoDB", "PostgreSQL", "Cron Jobs", "Deployment", "DevOps Basics"],
+        tools: ["Git/GitHub", "Postman", "VS Code", "Performance Optimization", "Scalable Architecture", "RBAC"]
+    };
+
+    // ── Education Data ─────────────────────────────────────────────────────
+    const educationData = [
+        {
+            degree: "B.E. in Electronics and Communication Engineering",
+            school: "BLDEA's College of Engineering and Technology, Bijapur",
+            year: "2017"
+        },
+        {
+            degree: "PUC (Higher Secondary Education)",
+            school: "SNJPNM'S PU Science College, Nidasoshi",
+            year: "2013"
+        },
+        {
+            degree: "SSLC (Secondary Education)",
+            school: "Rani Channamma High School, Hukkeri",
+            year: "2011"
         }
     ];
 
@@ -104,55 +252,104 @@ const PortfolioAssistant = () => {
     const generateResponse = (input: string): string => {
         const lowerInput = input.toLowerCase();
 
-        // Identity & About
-        if (lowerInput.includes('who are you') || lowerInput.includes('your name') || lowerInput.includes('about yourself') || lowerInput.includes('intro')) {
-            return "I'm Shashidhar's AI Portfolio Assistant! I can help you explore his professional background, technical expertise, and key projects. Try asking, 'What is your tech stack?' or 'Tell me about your experience at Cymbeline'.";
+        // ── Greetings ──────────────────────────────────────────────────────
+        if (lowerInput.match(/^(hi|hello|hey|greetings|howdy|sup|yo)[\s!?]*$/)) {
+            return "Hello! Great to have you here. I can tell you about Shashidhar's WMS expertise, his open-source packages, or his full work history. What would you like to know?";
         }
 
-        // Specific Company Check
+        // ── Identity ───────────────────────────────────────────────────────
+        if (lowerInput.includes('who are you') || lowerInput.includes('your name') || lowerInput.includes('about yourself') || lowerInput.includes('intro')) {
+            return "I'm Shashidhar's AI Portfolio Assistant! I can help you explore his 4+ years of professional experience, technical skills, projects, open-source contributions, and education. Try asking: 'What is your tech stack?', 'Tell me about WMS', or 'What open source packages have you built?'";
+        }
+
+        // ── About / Bio ────────────────────────────────────────────────────
+        if (lowerInput.includes('about') && (lowerInput.includes('shashi') || lowerInput.includes('you') || lowerInput.includes('yourself'))) {
+            return "Shashidhar is a Software Engineer II with 4+ years of experience building scalable, enterprise-grade web applications. He currently leads frontend delivery for the Panasonic WMS. His journey began in technical support before transitioning into full-stack development. He is also an active open-source contributor, having published qrlayout-core, qrlayout-ui, and env-drift-check on NPM.";
+        }
+
+        // ── Open Source ────────────────────────────────────────────────────
+        if (lowerInput.includes('open source') || lowerInput.includes('npm') || lowerInput.includes('package') || lowerInput.includes('library') || lowerInput.includes('publish')) {
+            for (const pkg of openSourceData) {
+                if (pkg.aliases.some(a => lowerInput.includes(a))) {
+                    return `**${pkg.name}**: ${pkg.desc} It has ${pkg.stats}. You can find it at: ${pkg.url}`;
+                }
+            }
+            const pkgList = openSourceData.map(p => `**${p.name}** (${p.stats})`).join(', ');
+            return `Shashidhar has published 3 open-source NPM packages: ${pkgList}. Ask about any one of them to learn more!`;
+        }
+
+        // ── Specific Package check ─────────────────────────────────────────
+        for (const pkg of openSourceData) {
+            if (pkg.aliases.some(a => lowerInput.includes(a))) {
+                return `**${pkg.name}**: ${pkg.desc} It has ${pkg.stats}. Check it out at: ${pkg.url}`;
+            }
+        }
+
+        // ── Specific Company / Experience ──────────────────────────────────
         for (const exp of experienceData) {
             if (exp.aliases.some(alias => lowerInput.includes(alias))) {
-                return `At ${exp.company}, I worked as a ${exp.role}. ${exp.points.join(" ")}`;
+                return `At **${exp.company}** as *${exp.role}* (${exp.period}): ${exp.points.join(" ")}`;
             }
         }
 
-        // Specific Project Check
+        // ── Specific Project ───────────────────────────────────────────────
         for (const proj of projectData) {
             if (proj.aliases.some(alias => lowerInput.includes(alias))) {
-                return `The ${proj.title} is ${proj.desc} It was built using ${proj.tech}.`;
+                return `**${proj.title}** is ${proj.desc} Built using: ${proj.tech}. Key highlights: ${proj.highlights.join(" | ")}`;
             }
         }
 
-        // Broad Categories
-        if (lowerInput.includes('experience') || lowerInput.includes('history') || lowerInput.includes('work') || lowerInput.includes('job') || lowerInput.includes('career')) {
-            return "I have over 4 years of experience delivering high-performance web applications. My current role is Software Engineer II at Cymbeline Innovation, and previously I worked at Flyers Soft and Triofi Technologies.";
+        // ── Broad: Experience / Career ─────────────────────────────────────
+        if (lowerInput.includes('experience') || lowerInput.includes('history') || lowerInput.includes('career') || lowerInput.includes('work') || lowerInput.includes('job') || lowerInput.includes('background')) {
+            return "Shashidhar has 4+ years in software development. His career: Software Engineer II at Cymbeline Innovation (Feb 2025–Present) → Software Engineer I at Cymbeline (Feb 2024–Jan 2025) → Software Developer at Flyers Soft (2023–2024) → Software Developer at Triofi Technologies (2021–2022). Before that, he was an Assistant Team Lead at Vindhya e-infomedia (2019–2020) and a Technical Support Engineer at Microsys (2017–2018).";
         }
 
-        if (lowerInput.includes('project') || lowerInput.includes('built') || lowerInput.includes('portfolio') || lowerInput.includes('case study')) {
-            return "I've architected several enterprise-grade solutions, including a complex Warehouse Management System (WMS), a real-time Stock Automation Platform, and an IIoT Monitoring Dashboard. Which one would you like to know more about?";
+        // ── Broad: Projects ────────────────────────────────────────────────
+        if (lowerInput.includes('project') || lowerInput.includes('built') || lowerInput.includes('portfolio') || lowerInput.includes('case study') || lowerInput.includes('work sample')) {
+            return "Shashidhar has built 6 major projects: 1) Warehouse Management System (WMS) – enterprise IIoT solution for Panasonic, 2) Stock Automation Platform – real-time trading system, 3) IIoT Monitoring Dashboard – machine health analytics, 4) QR Layout Designer & Libraries – open-source NPM tools, 5) E-Commerce Application – responsive shopping platform, 6) HR Management System (HRMS) – employee & payroll management. Which one would you like to explore?";
         }
 
-        if (lowerInput.includes('skill') || lowerInput.includes('tech') || lowerInput.includes('stack') || lowerInput.includes('react') || lowerInput.includes('node') || lowerInput.includes('next')) {
-            return "My technical arsenal matches a Senior Full Stack profile: Core (React 19, Next.js 16, TypeScript, Node.js), Styling (Tailwind CSS 4, Framer Motion), and Backend (MongoDB, Express). I also specialize in performance optimization and system architecture.";
+        // ── Skills / Tech Stack ────────────────────────────────────────────
+        if (lowerInput.includes('skill') || lowerInput.includes('tech') || lowerInput.includes('stack') || lowerInput.includes('language') || lowerInput.includes('framework') || lowerInput.includes('tool')) {
+            return `Shashidhar's full tech stack: **Frontend**: ${skillsData.frontend.join(', ')} | **Backend & APIs**: ${skillsData.backend.join(', ')} | **Database & Cloud**: ${skillsData.database.join(', ')} | **Tools & Concepts**: ${skillsData.tools.join(', ')}`;
         }
 
-        if (lowerInput.includes('contact') || lowerInput.includes('email') || lowerInput.includes('hire') || lowerInput.includes('reach') || lowerInput.includes('call')) {
-            return "I'm always open to discussing new opportunities or collaborations! You can reach me via the Contact section below, or connect with me directly on LinkedIn.";
+        // ── Specific skill queries ─────────────────────────────────────────
+        if (lowerInput.includes('react')) return "Shashidhar has 4+ years of React.js experience, building enterprise WMS modules, trading dashboards, and e-commerce platforms. He uses TypeScript and Material UI for type-safe, scalable interfaces.";
+        if (lowerInput.includes('vue') || lowerInput.includes('nuxt')) return "Shashidhar has worked with Vue.js (for the IIoT Monitoring Dashboard) and Nuxt.js (at Flyers Soft for SSR web applications). He also used Vuetify as a UI library.";
+        if (lowerInput.includes('python') || lowerInput.includes('fastapi')) return "Shashidhar works with Python and FastAPI for backend development, used in the Stock Automation Platform alongside Node.js and PostgreSQL.";
+        if (lowerInput.includes('node') || lowerInput.includes('express')) return "Shashidhar builds REST APIs with Node.js and Express.js, used across WMS, Stock Automation, HRMS, and other projects. He is comfortable with both JavaScript and TypeScript in the backend.";
+        if (lowerInput.includes('mongodb') || lowerInput.includes('database') || lowerInput.includes('postgresql')) return "Shashidhar works with MongoDB (used in WMS, Stock, HRMS projects) and PostgreSQL (used in the Stock Automation Platform). He designs schemas and integrates REST APIs with databases.";
+        if (lowerInput.includes('typescript')) return "TypeScript is one of Shashidhar's primary languages. He uses it for type-safe frontend development (React + MUI) and backend APIs (Node.js + Express), ensuring maintainable, scalable code.";
+
+        // ── Education ──────────────────────────────────────────────────────
+        if (lowerInput.includes('education') || lowerInput.includes('degree') || lowerInput.includes('college') || lowerInput.includes('university') || lowerInput.includes('study') || lowerInput.includes('qualification')) {
+            const eduList = educationData.map(e => `${e.degree} from ${e.school} (${e.year})`).join(' | ');
+            return `Shashidhar's education: ${eduList}. His engineering background in Electronics & Communication laid the foundation for his transition into software development.`;
         }
 
+        // ── Contact / Hire ─────────────────────────────────────────────────
+        if (lowerInput.includes('contact') || lowerInput.includes('email') || lowerInput.includes('hire') || lowerInput.includes('reach') || lowerInput.includes('call') || lowerInput.includes('available')) {
+            return "Shashidhar is open to new opportunities! You can reach him via the Contact section on this portfolio, connect on LinkedIn: linkedin.com/in/shashidhar-naik-aab5b512a, or check his GitHub: github.com/shashi089";
+        }
+
+        // ── Resume / CV ────────────────────────────────────────────────────
         if (lowerInput.includes('resume') || lowerInput.includes('cv') || lowerInput.includes('download')) {
-            return "You can download my latest resume from the navigation bar or the 'Contact' section.";
+            return "You can download Shashidhar's latest resume (Shashidhar_Naik_2025.pdf) from the navigation bar or the Contact section of this portfolio.";
         }
 
-        if (lowerInput.includes('hi') || lowerInput.includes('hello') || lowerInput.includes('hey') || lowerInput.includes('greetings')) {
-            return "Hello! Great to have you here. I can tell you about my WMS project, my expertise in Next.js, or my work history. What's on your mind?";
+        // ── Social Links ───────────────────────────────────────────────────
+        if (lowerInput.includes('github') || lowerInput.includes('linkedin') || lowerInput.includes('npmjs') || lowerInput.includes('social') || lowerInput.includes('profile')) {
+            return "Find Shashidhar online: GitHub → github.com/shashi089 | LinkedIn → linkedin.com/in/shashidhar-naik-aab5b512a | NPM → npmjs.com/~shashidharlbs";
         }
 
-        if (lowerInput.includes('why hire') || lowerInput.includes('strength') || lowerInput.includes('value')) {
-            return "You should hire me because I bring a blend of architectural vision and hands-on execution. I don't just write code; I build scalable, maintainable systems that drive business value, from optimizing WMS flows to ensuring SEO dominance.";
+        // ── Why Hire ───────────────────────────────────────────────────────
+        if (lowerInput.includes('why hire') || lowerInput.includes('strength') || lowerInput.includes('value') || lowerInput.includes('best at') || lowerInput.includes('why you')) {
+            return "You should hire Shashidhar because he brings a rare blend of architectural vision and hands-on execution. He doesn't just write code — he builds scalable, maintainable systems that drive business value, from leading enterprise WMS projects to publishing open-source tools used by the community. He's also a strong team player and mentor.";
         }
 
-        return "I'm still learning! Try asking about 'Experience', 'Projects', 'Tech Stack', or specific roles like 'WMS Lead' or 'Frontend Architect'.";
+        // ── Default fallback ───────────────────────────────────────────────
+        return "I'm still learning! Try asking about 'Experience', 'Projects', 'Tech Stack', 'Open Source', 'Education', or something specific like 'Tell me about the WMS project' or 'What is qrlayout-ui?'";
     };
 
     const handleSendMessage = async (e?: React.FormEvent) => {
@@ -184,7 +381,7 @@ const PortfolioAssistant = () => {
         }, 1000);
     };
 
-    const quickAsks = ["Experience", "Projects", "Skills", "Contact"];
+    const quickAsks = ["Experience", "Projects", "Skills", "Open Source", "Contact"];
 
     const handleQuickAsk = (text: string) => {
         setInputValue(text);
@@ -292,7 +489,7 @@ const PortfolioAssistant = () => {
                                             : 'bg-slate-800 text-slate-200 border border-slate-700/50 rounded-tl-sm'
                                             }`}
                                     >
-                                        <p className="text-sm leading-relaxed">{msg.text}</p>
+                                        <p className="text-sm leading-relaxed whitespace-pre-wrap">{msg.text}</p>
                                         <span className="text-[10px] opacity-50 mt-1 block px-1">
                                             {msg.timestamp.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
                                         </span>

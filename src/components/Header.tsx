@@ -39,7 +39,7 @@ const Header = () => {
                 </div>
 
                 {/* Desktop Nav */}
-                <nav className="hidden md:flex gap-8">
+                <nav className="hidden md:flex gap-8" aria-label="Main navigation">
                     {navLinks.map((link) => (
                         <Link
                             key={link.name}
@@ -60,14 +60,20 @@ const Header = () => {
                 <button
                     className="md:hidden text-slate-300 hover:text-white"
                     onClick={() => setIsOpen(!isOpen)}
+                    aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
+                    aria-expanded={isOpen}
+                    aria-controls="mobile-nav"
                 >
-                    {isOpen ? <X /> : <Menu />}
+                    {isOpen ? <X aria-hidden="true" /> : <Menu aria-hidden="true" />}
                 </button>
 
                 {/* Mobile Nav */}
                 <AnimatePresence>
                     {isOpen && (
                         <motion.div
+                            id="mobile-nav"
+                            role="navigation"
+                            aria-label="Mobile navigation"
                             initial={{ opacity: 0, y: -20 }}
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -20 }}

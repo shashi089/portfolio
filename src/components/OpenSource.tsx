@@ -29,7 +29,7 @@ const OpenSource = () => {
     ];
 
     return (
-        <section id="opensource" className="py-20 relative overflow-hidden">
+        <section id="opensource" aria-label="Open Source Contributions" className="py-20 relative overflow-hidden">
             {/* Background Decor */}
             <div className="absolute top-1/2 left-0 w-96 h-96 bg-violet-600/10 rounded-full blur-[100px] -z-10" />
 
