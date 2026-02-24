@@ -63,7 +63,7 @@ I actively contribute to the developer community through open-source NPM package
 | **env-drift-check** | CLI tool to detect drift between .env files | 200+ | [View Package](https://www.npmjs.com/package/env-drift-check) |
 
 **Total Downloads**: 2k+ across all packages  
-**Tech Stack**: TypeScript, JavaScript, Node.js, React, Vue.js, Angular
+
 
 ---
 
