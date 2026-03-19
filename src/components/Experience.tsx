@@ -34,7 +34,7 @@ const Experience = () => {
             role: "Software Engineer I",
             company: "Cymbeline Innovation Pvt. Ltd",
             period: "Feb 2024 - Jan 2025",
-            tech: ["React.js", "Node.js", "MongoDB", "Express", "Python", "PostgreSQL"],
+            tech: ["React.js", "Node.js", "MongoDB", "Express", "PostgreSQL"],
             points: [
                 "Contributed as a Software Engineer I on Stock Automation and early-phase WMS feature development.",
                 "Developed frontend modules using React.js, TypeScript, and Material UI.",
@@ -197,3 +197,4 @@ const Experience = () => {
 };
 
 export default Experience;
+

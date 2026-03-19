@@ -91,7 +91,7 @@ const Hero = () => {
                                 <span className="text-slate-500">experience:</span> <span className="text-orange-400">4+</span>,
                             </div>
                             <div className="pl-6">
-                                <span className="text-slate-500">skills:</span> <span className="text-yellow-400">['React','Javascript', 'Node Js', 'Express Js','TypeScript', 'MongoDB',"Python","PostgreSQL"]</span>,
+                                <span className="text-slate-500">skills:</span> <span className="text-yellow-400">['React','Javascript','Nuxt Js', 'Node Js', 'Express Js','TypeScript', 'MongoDB', 'PostgreSQL']</span>,
                             </div>
                             <div className="pl-6">
                                 <span className="text-slate-500">currentFocus:</span> <span className="text-green-400">'Enterprise IIOT Solutions'</span>
@@ -112,3 +112,4 @@ const Hero = () => {
 };
 
 export default Hero;
+

@@ -217,7 +217,7 @@ const PortfolioAssistant = () => {
     // ── Skills Data ────────────────────────────────────────────────────────
     const skillsData = {
         frontend: ["React.js", "Nuxt.js", "Vue.js", "TypeScript", "JavaScript (ES6+)", "HTML5/CSS3", "Material UI", "Vuetify", "Bootstrap"],
-        backend: ["Node.js", "Express.js", "RESTful APIs", "Python", "FastAPI"],
+        backend: ["Node.js", "Express.js", "RESTful APIs"],
         database: ["MongoDB", "PostgreSQL", "Cron Jobs", "Deployment", "DevOps Basics"],
         tools: ["Git/GitHub", "Postman", "VS Code", "Performance Optimization", "Scalable Architecture", "RBAC"]
     };
@@ -552,3 +552,4 @@ const PortfolioAssistant = () => {
 };
 
 export default PortfolioAssistant;
+
