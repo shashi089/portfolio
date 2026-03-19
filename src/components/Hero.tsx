@@ -94,7 +94,7 @@ const Hero = () => {
                                 <span className="text-slate-500">skills:</span> <span className="text-yellow-400">['React','Javascript', 'Node Js', 'Express Js','TypeScript', 'MongoDB',"Python","PostgreSQL"]</span>,
                             </div>
                             <div className="pl-6">
-                                <span className="text-slate-500">currentFocus:</span> <span className="text-green-400">'Enterprise WMS Solutions'</span>
+                                <span className="text-slate-500">currentFocus:</span> <span className="text-green-400">'Enterprise IIOT Solutions'</span>
                             </div>
                             <div>
                                 <span className="text-yellow-400">{"}"}</span>;
