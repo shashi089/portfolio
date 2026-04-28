@@ -1,0 +1,17 @@
+{
+  "name": "Shashidhar Naik — Full Stack Developer Portfolio",
+  "short_name": "Shashi.Dev",
+  "description": "Professional portfolio of Shashidhar Naik, a Software Engineer II specializing in React, Next.js, and Node.js.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "orientation": "portrait"
+}

@@ -51,7 +51,7 @@ const Footer = () => {
                                     <a
                                         href={link.href}
                                         target="_blank"
-                                        rel="noopener noreferrer"
+                                        rel="noopener noreferrer me"
                                         aria-label={link.label}
                                         className="flex items-center gap-1.5 text-slate-500 hover:text-violet-400 transition-colors text-sm"
                                     >

@@ -219,3 +219,35 @@ export const projectsSchema = {
         },
     ],
 };
+
+// ── 4. Breadcrumb Schema ──────────────────────────────────────────────────────
+export const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": BASE_URL
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "About",
+            "item": `${BASE_URL}/#about`
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Experience",
+            "item": `${BASE_URL}/#experience`
+        },
+        {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Projects",
+            "item": `${BASE_URL}/#projects`
+        }
+    ]
+};

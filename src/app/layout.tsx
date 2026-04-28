@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { personSchema, websiteSchema, projectsSchema } from "@/lib/jsonld";
+import { personSchema, websiteSchema, projectsSchema, breadcrumbSchema } from "@/lib/jsonld";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -134,6 +134,9 @@ export const metadata: Metadata = {
     apple: "/favicon.ico",
   },
 
+  // ── Manifest ──────────────────────────────────────────────────────────────
+  manifest: "/manifest.json",
+
   // ── Theme ─────────────────────────────────────────────────────────────────
   other: {
     "theme-color": "#0f172a",       // slate-950 — matches page background
@@ -189,6 +192,12 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(projectsSchema) }}
+        />
+
+        {/* ── JSON-LD: Breadcrumb Schema ── */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
       </head>
       <body className={`${inter.className} antialiased`}>

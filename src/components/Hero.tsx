@@ -48,7 +48,7 @@ const Hero = () => {
                                 key={index}
                                 href={social.href}
                                 target="_blank"
-                                rel="noopener noreferrer"
+                                rel="noopener noreferrer me"
                                 aria-label={social.label}
                                 role="listitem"
                                 className="p-3 bg-slate-800/50 hover:bg-violet-600/20 hover:text-violet-400 text-slate-400 rounded-full transition-all border border-slate-700/50 hover:border-violet-500/50"
