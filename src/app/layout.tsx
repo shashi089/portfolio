@@ -14,6 +14,7 @@ const inter = Inter({
 // ─────────────────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   metadataBase: new URL("https://shashidhar-portfolio.netlify.app"),
+  referrer: 'origin-when-cross-origin',
 
   title: {
     default: "Shashidhar Naik | Full Stack Developer — React, Node.js, Next.js",
@@ -61,6 +62,10 @@ export const metadata: Metadata = {
   authors: [{ name: "Shashidhar Naik", url: "https://shashidhar-portfolio.netlify.app" }],
   creator: "Shashidhar Naik",
   publisher: "Shashidhar Naik",
+
+  applicationName: "Shashidhar Naik Portfolio",
+  category: "technology",
+  classification: "Software Engineer Portfolio",
 
   formatDetection: {
     email: false,
@@ -122,6 +127,7 @@ export const metadata: Metadata = {
       },
     ],
     creator: "@shashidhar_dev",
+    site: "@shashidhar_dev",
   },
 
   // ── Icons ─────────────────────────────────────────────────────────────────

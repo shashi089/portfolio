@@ -33,7 +33,7 @@ const Contact = () => {
                             <Mail className="w-8 h-8" />
                         </div>
                         <h3 className="text-lg font-semibold text-slate-200 mb-2">Email</h3>
-                        <a href="mailto:shashidharnaikTest@gmail.com" className="text-slate-400 hover:text-violet-400 transition-colors break-all">
+                        <a href="mailto:shashidharnaik8@gmail.com" className="text-slate-400 hover:text-violet-400 transition-colors break-all">
                             shashidharnaik8@gmail.com
                         </a>
                     </div>
